@@ -61,6 +61,20 @@ import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
+import FigmaOverview from "./assets/post/FigmaOverview.jpg"
+
+import Task11 from "./assets/post/Task1/task1-1.jpg"
+import Task12 from "./assets/post/Task1/task1-2.jpg"
+import Task13 from "./assets/post/Task1/task1-3.jpg"
+import Task14 from "./assets/post/Task1/task1-4.jpg"
+import Task15 from "./assets/post/Task1/task1-5.jpg"
+import Task16 from "./assets/post/Task1/task1-6.jpg"
+
+import Task21 from "./assets/post/Task2/task2-1.jpg"
+import Task22 from "./assets/post/Task2/task2-2.jpg"
+import Task23 from "./assets/post/Task2/task2-3.jpg"
+import Task24 from "./assets/post/Task2/task2-4.jpg"
+
 # Lingual
 
 <ProjectSubtitle>A new way to learn languages</ProjectSubtitle>
@@ -281,73 +295,125 @@ adipiscing diam donec adipiscing.
 
 ## Resulting Design
 
+<ProjectImageBlock
+    image={{
+        src: FigmaOverview,
+    }}
+    caption={
+        "Final Design Figma Overview."
+    }
+    width={8}
+>
+Our resulting design supports two main tasks: Allowing users to discover media content in a foreign 
+language that fits their language comprehension ability, and helping users find a community/a conversational partner for the language being learned.
+</ProjectImageBlock>
+
+### Task 1: Discover media content in a foreign language that fits one's language comprehension ability
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: Task11,
+            caption: "Figure 1.",
         },
         {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
+            src: Task12,
+            caption: "Figure 2.",
+        }
     ]}
     direction={"row"}
-    caption={
-        "This caption for the entire block will span the set of images."
-    }
     width={8}
-    maxHeight={"400px"}
 >
-
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
-
+Once the user creates an account, they are prompted to select which languages they would 
+like to learn (Figure 1) and which genres of media they enjoy consuming (Figure 2). 
+For this example, the user chooses Spanish and that they enjoy comedy.
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: Task13,
+            caption: "Figure 3.",
         },
         {
-            src: imagePlaceholder300x600,
-        },
+            src: Task14,
+            caption: "Figure 4.",
+
+        }
     ]}
     direction={"row"}
-    caption={
-        "This caption for the entire block will span the set of images."
-    }
     width={8}
-    maxHeight={"400px"}
 >
+The user then proceeds to take a placement quiz for the languages the selected (Figure 3). 
+This quiz is meant to measure their baseline proficiency and is used to generate inital media recommentations. 
+They recieve a Lingual Score that represents their relative proficiency in that language (Figure 4). 
+The user can increase their Lingual Score by completing check-in quizzes about a show or movie they are watching.   
+</ProjectImagesBlock>
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+<ProjectImagesBlock
+    images={[
+        {
+            src: Task15,
+            caption: "Figure 5.",
 
+        },
+        {
+            src: Task16,
+            caption: "Figure 6.",
+
+        }
+    ]}
+    direction={"row"}
+    width={8}
+>
+After completing the baseline proficiency quiz and recieving their Lingual Score, they are brought to the Discover page, 
+where they can browse curated shows, movies, and books are recommended to them (Figure 5). 
+These recommendations are based off of their input favored genres and their current proficiency. 
+They can engage with the media by clicking on each thumbnail (Figure 6).
+
+</ProjectImagesBlock>
+
+
+
+### Task 2: Find a community/a conversational partner for a language being learned
+
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: Task21,
+            caption: "Figure 7.",
+        },
+        {
+            src: Task22,
+            caption: "Figure 8.",
+        }
+    ]}
+    direction={"row"}
+    width={8}
+>
+On the Conversations page in the app, the user can toggle between their individual chats or their group chats (Figure 7). 
+The user can also search for specific individuals or groups they are in. 
+To join a new group or start chatting with a new individual, the user presses the plus button on the top right of the screen.
+They are then presented with the option to join a group or converse with an individual.
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: Task23,
+            caption: "Figure 9.",
+        },
+        {
+            src: Task24,
+            caption: "Figure 10.",
+        }
+    ]}
+    direction={"row"}
+    width={8}
+>
+For this example, the user wants to join a new group to discuss the current show they are watching.
+Based on the show or novel that the user is currently watching, the app will recommend groups that are in
+roughly the same spot as the user (Figure 9). The user is then able to join the group to practice
+their conversational skills and discuss the content of the show or novel (Figure 10).
 </ProjectImagesBlock>
