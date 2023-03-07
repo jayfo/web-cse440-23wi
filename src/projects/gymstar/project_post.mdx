@@ -52,36 +52,46 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
   *   - Be sure all images are the same height.
 */}
 
-import imageTeamPerson1 from "./assets/team/firstname1.png";
-import imageTeamPerson2 from "./assets/team/firstname2.png";
+import imageTeamPerson1 from "./assets/team/Duaa.png";
+import imageTeamPerson2 from "./assets/team/AbbyPic.jpeg";
 import imageTeamPerson3 from "./assets/team/firstname3.png";
-import imageTeamPerson4 from "./assets/team/firstname4.png";
+import imageTeamPerson4 from "./assets/team/IMG20230307110720.jpg";
 
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+import colorCodedMap from "./assets/post/ColorCoding.png";
+import newNavBar from "./assets/post/navbar.png";
+import gym from "./assets/post/gymImage.PNG";
 
-# Title
+import sketch1 from "./assets/post/sketch1.PNG";
+import sketch2 from "./assets/post/sketch2.PNG";
+import task1 from "./assets/post/task1.PNG";
+import task2 from "./assets/post/task2.PNG";
+import mockupOverview from "./assets/post/mockupOverview.PNG";
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+
+# GymStar
+
+<ProjectSubtitle>Revolutionizing the gym experience to save you time and overcome knowledge barriers.</ProjectSubtitle>
 
 ## Team
 
 <TeamMemberGallery members={[
     {
-        name: "Team Person 1",
+        name: "Duaa Zaheer",
         photo: imageTeamPerson1,
     },
     {
-        name: "Team Person 2",
+        name: "Abby Hecko",
         photo: imageTeamPerson2,
     },
     {
-        name: "Team Person 3",
+        name: "Ryan Le",
         photo: imageTeamPerson3,
     },
     {
-        name: "Team Person 4",
+        name: "Ethan Hecko",
         photo: imageTeamPerson4,
     },
 ]} />
@@ -101,74 +111,57 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: gym,
     }}
     caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
+        "Going to the gym and can be a stressful and time-consuming process."
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+### Problem
+ 
+The overall problem space we explored was that the gym is can be a stressful environment for beginners who don't know how to use equipment and people often find it difficult to manage their time when they're at the gym because of busyness in different sections. Within the gym, there is an internal pressure, particularly against women and people who don't stereotypically fall into the "gym bro" stereotype. This pressure makes it difficult to work out, and often times, this pressure also leads to a hesitance to ask for help when one is struggling. People also find that machines can be super busy at different times of the day and find it difficult to stick to a schedule and remain on time. As a result, this leads to people not pushing themselves as hard, not asking for help, and sometimes even skip their gym workout altogether. This results in people seeing the gym environment as a burden rather than a routine.
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+### Design
+ 
+Hence, we designed a new app to combat the issue of hostile gym environments and gym hesitancy. We are proposing a gym app that would help to combat this issue. This gym app would be an app that would be specially catered to each gym, and it would include a map of the gym that would help to guide the users, and guide them around the gym most effectively. The app would have two primary functionalities. One of these functionalities was knowing how crowded the gym is before going while measuring the business of specific machines. The other functionality was understanding the various muscle groups and fitness areas that a machine primarily targets and guiding the user through the process of using the machines effectively to avoid injury. 
 
 </ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+Phase 1: Brainstorming
 
-### Title for an Insight
+Given that we had multiple ideas that we wanted to sort through and research on, we wanted to explore the problem space to see if there were any immediate issues that we could address. Going in, team members identified three different problems each that they thought were big problems they faced in their day to day lives. Then, the problem space was narrowed down to three pressing issues decided by the team through examining problem spaces and comparing the relevance of the issues. The team narrowed the problem selections down to the following three problems:
+* Auto Pet Feeder
+* Virtual Personal Trainer
+* Budget Tracker
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
+While these ideas were vague, and not quite fleshed out, it is important to note that these problems have not had a definitive solution created that addressed all our requirements, but we knew that the solution would have something to do with tracking as that was the selected theme for the course. After a discussion period, the team eventually decided to move forth with the virtual personal trainer, after recognizing how much difficulty we, as beginners, faced with sticking to a gym routine and learning the uses of different gym equipment. 
 
-### Title for an Insight
+Phase 2: Design Research
+
+Next,  we conducted research to identify the issues that were in our problem space. To do this, we determined the audience that we would target and the people who would use our design. In order to do this, we would first analyze the fitness trends and datasets to frame our interview questions around. We also made sure to target a carefully selected interview sample space to receive the best results for the group that we were trying to target. The next step was to write down a few starter questions that would guide the research. These questions were separated into two subgroups in order to satisfy our target audiences: beginner and experienced gym members. This would differentiate our two interest groups and help us better understand the issues that the interviewees had based on their experience level. We ended up choosing participants from the CSE Powerlifters group, Elm Gym, the IMA, and other close family and friends. We aimed to get people from a broad range of experience levels. Our primary research method for this project was through interviews and we aimed to get a diverse range of interviewees depending on level of gym experience, as well as an even split between male and female identifying participants to see if there was a divide in perspectives related to what stops people from going to the gym based on the gender they present as. We interviewed male members of CSE Powerlifters, an experienced weightlifting group on campus, as well as female members of the IMA who take beginner workout classes there. Another research method we used was meta analysis of data collected through previous research studies that helped us identify key factors that stop people from regularly going to the gym.
+
+
+
+### Long Wait Times and Time Management
+
+We found that more experienced gym members largely had the most difficulty dealing with long wait times, especially when running on busy schedules. It's often difficult to determine how busy the gym is going to be or different equipment is going to be before heading to the gym, and it's not something they can really anticipate. Our participants found that they often lost motivation to go to the gym in parts of the year where the gym was regularly busy and it was hard to occupy themselves with something else during waiting time. One participant in particular from the CSE Powerlifters group dealt with an issue where they had a very heavy courseload for winter quarter, but because of how busy the gym tends to get at the beginning of the year, they found it difficult to stick to their gym routine without planned out machine alternatives. 
+
+### Learning New Equipment and Avoiding Injury
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
+            src: sketch1,
+            caption: "Our first sketch involving video tutorials and a messaging platform",
         },
         {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
+            src: sketch2,
+            caption: "Our second sketch detailing workout plans and wait times.",
         },
     ]}
     direction={"row"}
@@ -176,185 +169,85 @@ faucibus nisl tincidunt.
     maxHeight={"400px"}
 >
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+People who go to the gym more casually and as beginners had more issues feeling fearful of getting injured when learning about how to use new equipment. Because of this, they didn't feel confident enough to try new machines and step out of their comfortome. For example, one of the beginner-level participants we interviewed often uses the treadmill, but wanted to try weightlifting. However, because they had difficulty understanding how to properly use the squat rack, position themselves, what weight to start with, and how to perform the exercise correctly without hurting their backs and knees, they lacked motivation to continue learning. It would be time consuming without proper aid and help. 
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### Intimidation and Fear of Asking for Help
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+A lot of participants from our beginner and intermediate level interviewee samples, particularly female-identifying ones, also faced a lot of intimidation at the gym. When learning new equipment, they felt anxiety when trying to find people to ask for help and often did not ask for help altogether out of fear. For our experienced gym-goers, they faced a similar issue often when looking for people to help spot them. In the case that a gym buddy did not come along, it was often difficult to ask for help without feeling like you were taking away someone else's time. 
 
 ## Iterative Design Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+During the testing process, we realized that it was very difficult to give the participant instructions on how to use the paper prototype without oversharing and giving away details we were already familiar with, given that it was our own design. We didn't want to give too much information because we wanted to get accurate and realistic feedback on the usability and accessibility of the prototype and all the design issues we failed to consider by over-familiarizing ourselves with our own design. For the rest of our research, we hoped to make navigation details easier to infer by modifying the design and sharing less information overall so we can get more valuable feedback.
+We performed a heuristic evaluation that involved understanding Nielsen’s Ten Usability Heuristics for User Interface Design. This process involved analyzing ten different aspects of the apps for the most concerning features. As a result, we realized that we had issues with helping to guide the user through their gym workout effectively. Additionally, the gym status and navigation weren’t correlated. Particularly the seventh heuristic dealing with flexibility and efficiency of use was the most difficult to perceive through. As a result, we installed shortcuts in order to help with the more experienced users to navigate to the location of the machine and a search feature in order to make the machine more accessible to remove the issue of manually locating the machine. Additionally, we added a “business status” so that it can be more apparent how busy certain areas of the gym are within the map. Lastly, we addressed the issue of navigating the app by adding a navigation bar to the bottom to make it easier to move around to the other places and to give it a “cell phone app” feel. Overall, the user feedback was very helpful as it gave us realistic and helpful feedback on issues that we didn’t know we had. 
+After making the necessary design modifications, we did usability tests with three different users in our representative population in order to get a better feel of the issues with our app. We tested on a beginner woman, casual workout woman, and a frequent workout man. The information we were able to gather from the usability tests were that the naming conventions were confusing and that design and color-coding could’ve improved the process for users. Finally, this led to the final digital mockup, which incorporated all of the design feedback into consideration. In particular, we color coded the tasks, added icons to the bottom with text, and made the design aesthetically pleasing.
 
-### Title for an Insight
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+### Color Coding for Easy Interpretation
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+<ProjectImageBlock image={{ src: colorCodedMap, }} caption={ "Our updated color-coded map." } width={6} maxHeight={"400px"}>
+
+The first important revision was to color code the map of the floors of the gym. When looking at the map of the gym, it used to have no way to indicate the busyness of a room in the gym. By color-coading the map of the gym, the participant can see how busy the space is before they enter. We learned this was an important feature during usability testing because one of our participants said they would not enter a room in the gym if it was too busy. In our previous design, the participant would have to walk into a room to see how busy it is. We wanted to alleviate this step of having to walk into the room by color-coding the rooms in the gym by busyness. This is important because it saves the participant time and makes going to the gym a smoother experience, which is one of the main goals of our application.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Modifying Navigation Bar
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+<ProjectImageBlock image={{ src: newNavBar, }} caption={ "Our updated navigation bar." } width={6} maxHeight={"400px"}>
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+The second important revision we made was changing the language in the navigation bar. In our previous design, we had the home screen labeled as Gym Status. We learned this language by completing the task of, “seeing how busy a machine is,” confusing for participants. Rather than going to the map, one of the participants in our usability test went to the “Gym Status” screen to find the busyness of a machine. We are going to combat this confusion by making the home screen titled, “Home.” This is important because it will allow participants to clearly achieve the task of, “seeing how busy a machine is,” without confusion.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Promoting Inclusivity
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
-
-</ProjectImageBlock>
+One revision we made to promote the inclusivity of people at various knowledge levels about the gym and their personal anatomy was the revision related to popping up an image showing muscle groups that are targeted instead of just listing them. Oftentimes, people who are attempting to gain more familiarity with muscle groups targeted by different machines might not be able to identify specific muscle groups by just their name, so having a diagram there to aid them in their learning process is essential. We had made an unintentional assumption that the people using our app would already be familiar with where specific muscle groups are located if they wanted to use a specific machine that they believed might target those muscles. 
+Another revision we made related to meeting the Web Content Accessibility Guidelines was increasing the font size of the machine status because it was too small beforehand. WCAG guidelines advise bigger text to ensure that text is not illegible. Conceptually, our design process so far has been targeted towards promoting inclusive environments at the gym so we didn't have to make many modifications about the overall design process. Some assumptions we made were related to visibility of colors to indicate the busyness of gym sections. We used green, red and yellow but the green-red spectrum is difficult for people who are colorblind to differentiate. In future iterations, we hope to create more distinct and contrasting color options and also turn a lot of the more wordy sections into separate sections using buttons so text-to-speech applications don’t have to read aloud everything all at once.
 
 ## Resulting Design
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: mockupOverview,
+    }}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Digital Mockup Overview"
     }
-    width={8}
+    width={6}
+    maxHeight={"400px"}
+>
+ 
+In implementing the digital mockup, we made a few different design decisions depending on inconsistencies we found in the paper prototype and more realistic options that should be available to users. We formatted the gym map to no longer be diagonal across the page because a horizontal layout is generally more familiar to people using maps for reference. We decided to keep the information on the machine info page fairly minimal and instead of buttons leading up to pages with more detailed information. For example, we have Status Information, Path to the machine, and Equipment User Information for video tutorials and targeted muscles. We added more information to our map legend to indicate the meaning of different colors related to section busyness. We also made the map section more minimal in terms of determining if a machine was open or not, based on the color of the machine, than having two background indicators as seen in the paper prototype. Lastly, we noticed in that there was missing functionality in terms of navigating in-between pages, such as traversing the map if there were multiple floors and added buttons to reduce navigation time to important pages that could complete the task quicker for the user, such as, “My Workouts” in the overall map page in addition to having it in the machine map page as well. 
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: task1,
+    }}
+    caption={
+        "Task 1: Participants are able to infer the status of various machines from the gym map (i.e. how busy they are and what similar machines are open that they might be able to use as an alternative)."
+    }
+    width={6}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+Walkthrough: Participants can see the busyness of the rooms at the gym. Then they can click a room to see the busyness of each machine, once they click a machine, they can see the status of it clearly marked above the image of the machine. In addition, participants could alternatively diverge from the map path to complete the task and click the My Workouts button to show the participant’s workouts and their status for that exercise and machine that is involved. 
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: task2,
+    }}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Task 2: Participant learns information about the machine (i.e. muscle groups and how to use the machine).."
     }
-    width={8}
+    width={6}
     maxHeight={"400px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+Walkthrough: Participants can click on the “Information” button in order to see a video tutorial and a list of muscle groups the machine works in addition to diagrams of the muscle groups. 
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
