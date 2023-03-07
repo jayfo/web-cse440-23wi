@@ -62,6 +62,9 @@ import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
 import FigmaOverview from "./assets/post/FigmaOverview.jpg"
+import SplashPage from "./assets/post/SplashPage.jpg"
+import PaperPrototypeOverview from "./assets/post/PaperPrototypeOverview.jpg"
+
 
 import Task11 from "./assets/post/Task1/task1-1.jpg"
 import Task12 from "./assets/post/Task1/task1-2.jpg"
@@ -115,15 +118,10 @@ import Task24 from "./assets/post/Task2/task2-4.jpg"
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: SplashPage,
+        caption: "Lingual Launch Page"
     }}
-    caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
-    }
-    width={6}
-    maxHeight={"400px"}
+    width={4}
 >
 
 Roughly only 20% of Americans know more than one language. One of the reasons this 
@@ -193,10 +191,19 @@ TOWRITE
 
 ## Iterative Design Process and Key Insights
 ### Reaching a Paper Prototype
+<ProjectImageBlock
+    image={{
+        src: PaperPrototypeOverview,
+        caption: "Paper Prototype Overiew"
+    }}
+    width={6}
+>
 We began by making many prospective design sketches and storyboards before we narrowed to making a
 mobile application focusing on two tasks: Finding media content at the appropriate difficulty level
 and finding a community/conversational partner. We then made a paper prototype for the mobile 
 application that we took into testing iterations.
+
+</ProjectImageBlock>
 
 ### Testing Process
 We iterated on our prototype through two heuristic evaluations based on Nielson’s 10 Usability
