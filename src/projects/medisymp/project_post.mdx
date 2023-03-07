@@ -52,36 +52,55 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
   *   - Be sure all images are the same height.
 */}
 
-import imageTeamPerson1 from "./assets/team/firstname1.png";
-import imageTeamPerson2 from "./assets/team/firstname2.png";
-import imageTeamPerson3 from "./assets/team/firstname3.png";
-import imageTeamPerson4 from "./assets/team/firstname4.png";
+import imageTeamPerson1 from "./assets/team/ali.png";
+import imageTeamPerson2 from "./assets/team/angelo.png";
+import imageTeamPerson3 from "./assets/team/christy.jpg";
+import imageTeamPerson4 from "./assets/team/octavia.jpg";
 
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
-# Title
+import phonemockup from "./assets/post/phone_mockup.png";
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+import iterativeinsight1image12 from "./assets/post/iterative_insight_1_image_1_2.png";
+import iterativeinsight1image22 from "./assets/post/iterative_insight_1_image_2_2.png";
+import iterativeinsight2image12 from "./assets/post/iterative_insight_2_image_1_2.png";
+import iterativeinsight2image22 from "./assets/post/iterative_insight_2_image_2_2.png";
+import iterativeinsight3image12 from "./assets/post/iterative_insight_1_image_1_2.png";
+//Continue Importingaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+import task1stage1 from "./assets/post/task_1_stage_1.png";
+import task1stage2 from "./assets/post/task_1_stage_2.png";
+import task1stage3 from "./assets/post/task_1_stage_3.png";
+import task1stage4 from "./assets/post/task_1_stage_4.png";
+import task2stage1 from "./assets/post/task_2_stage_1.png";
+import task2stage2 from "./assets/post/task_2_stage_2.png";
+import task2stage3 from "./assets/post/task_2_stage_3.png";
+import task2stage4 from "./assets/post/task_2_stage_4.png";
+import task2stage5 from "./assets/post/task_2_stage_5.png";
+
+# Medi-Symp
+
+<ProjectSubtitle>Medication Adherence and Symptom Tracking</ProjectSubtitle>
 
 ## Team
 
 <TeamMemberGallery members={[
     {
-        name: "Team Person 1",
+        name: "Ali",
         photo: imageTeamPerson1,
     },
     {
-        name: "Team Person 2",
+        name: "Angelo",
         photo: imageTeamPerson2,
     },
     {
-        name: "Team Person 3",
+        name: "Christy",
         photo: imageTeamPerson3,
     },
     {
-        name: "Team Person 4",
+        name: "Octavia",
         photo: imageTeamPerson4,
     },
 ]} />
@@ -99,262 +118,412 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
+Medication management and adherence can be a struggle for patients, particularly for individuals with chronic illness. 
+The burden of logistics to manage their medication is on the shoulders of patients, and it’s not always easy – 50% of
+patients with chronic illnesses don’t take their medication properly, usually because they forget to. Compounding this
+is the infrequently asked, yet critical, inquiry from their physicians about the effectiveness of their medications, 
+an issue tackled best by symptom tracking over time. Medi-Symp is a mobile app with watch integration, aiming to 
+challenge these challenging barriers to patient health and wellness.
+
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: phonemockup,
     }}
     caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
+        "Medi-Symp allows for on-the-go medication reminders through a mobile application with watch integration."
     }
     width={6}
     maxHeight={"400px"}
 >
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
-
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
-
 </ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+### Design Research Overview
 
-### Title for an Insight
+The focus of our design research was to establish an informed, evidence-based understanding of the tasks our target group seek to accomplish 
+and the current barriers they face in that process. This was necessary in order to understand the scope of the problem 
+we are trying to solve, including its consequences. We also specifically sought to understand obstacles in patient-doctor communication. We set out to accomplish these goals through three research
+methods. The first is three semi-structured interviews with a pharmacist, nurse, and physician, to gain second-hand real-world 
+experience with these issues. Speaking with a physician, nurse, and pharmacist benefitted us because we were able to gain the 
+perspective of a doctor writing prescriptions and also discussing symptomology with patients, the perspective of a pharmacist
+who deals with prescription medicine more closely, as well as the nurse's perspective of administering medication. 
+We also conducted a diary study for a priority stakeholder that envisions a lot of what we’re aiming for in the patient part of this design. 
+Finally, we performed a literature review about medication adherence and its management as we are designing for a space that has been 
+researched for a long period of time and there is a relevant history we can use in our design process. 
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
+**Design Focus:**
+- Remembering to take daily medication
+- Journaling Symptomology for medical evaluation
 
-### Title for an Insight
+Our iterative design process aimed to refine our chosen design, a mobile application with watch integration, in order to best accomplish the tasks 
+As part of our iterative design process, we initially brainstormed as well as sketched different ideas. 
+These ideas include a smart pill box, a phone app paired with a clicker, and a phone app synced with smart watch integration. 
+After brainstorming, we agreed on the phone application with the smartwatch app where a person can set up their medication and symptomatology alerts in the phone app and be notified on both devices. 
+The tracking of symptoms can also be done via phone or watch.
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
+### Key Insights
+
+**Personalization and Customization of Key**
+Through our initial design research early on, we discovered that any attempt at generalization or an impersonal approach to our design would be unsuccessful. 
+Specifically, the pharmacist interviewed emphasized this by saying “Remember: every patient is different, and every aspect varies from person to person”. 
+Our literature review further demonstrated this because it indicated that each individual has different reasons for taking (or not taking) their medications. 
+Some patients may need alerts temporarily, such as for a short-term medication, while others require permanent alerts. A one-size-fits-all approach is not the best approach. 
+Initially, we wanted to have a quick and simple questionnaire to be filled out when recording symptoms, but we were reminded that having the same couple of questions for everyone
+would lower the benefit for everyone by adding unnecessary symptom questions for people that never had those issues. We also realized that there will inevitably be symptoms
+or unique reactions that people desire to track but we will not know about because everybody’s medical situation is unique. For this reason we added a free entry textbox,
+allowing for additional notes to be entered and tracked. 
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+        "The symptom entry page with ‘Notes’, an optional free text box." +
+        "Right: The medication scheduling page with customizable settings."
+    }
+    width={6}
     maxHeight={"400px"}
->
+></ProjectImageBlock>
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+**Portability is a necessity**
+Through critique received during studio time with the course staff, 
+we arrived at the realization that our design, no matter the form, 
+needed to be portable in order to deliver medication reminders at the appropriate time. 
+The point of the research process where this occurred was after we came up with three designs. 
+In presenting our three designs the course staff asked “What happens if they aren’t home when the alert arrives?” – admittedly, 
+we hadn’t considered what would happen in that scenario!  This critique made it abundantly clear that mobile integration would be a best fit 
+for actually conquering the problem of medication reminders because we improperly made the assumption that patients would be home for these reminders, 
+clearly an incorrect choice. Following this feedback session we narrowed our focus to designing for either an exclusively-mobile design
+or a physical design with necessary mobile integration of sorts.
 
-</ProjectImagesBlock>
+**Accessibility through external devices**
+From our design research, we discovered that we needed to make our design more accessible. 
+Specifically, allowing the symptomology recording to be done in a more quick and simple way. 
+This critique came up through our diary study when our participant explained the lack of accommodations for those who have high-accessibility needs. 
+“If I could pre-write common occurrences that happen in severe attacks and then have one or two buttons to press instead of having to type or speak that would be helpful.
+[…]Since if it's bad enough I will be unconscious. Or nonverbal. Or paralyzed. Presents some issues.” - Diary Study Participant. 
+We realized accessibility is very important for a design like this as people who have the highest accessibility needs are more likely to need a design like this the most, 
+and most consistently. From here, we knew we needed a way for the participant to be able to record symptoms with only a few taps. This is where the idea of smart-watch integration came out. 
+Being able to report symptoms through a watch would be easier than pulling out a phone, and also the watch would theoretically be on your person at all times. 
+The second part of this redesign was our “Easy Symptoms” page where groupings of symptoms can be preset for easy access through the watch later.
 
-### Title for an Insight
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+        "The symptom entry watch interface features large touchpoints" + 
+        and a simplified interface with clear confirmation messages, emphasizing accessibility."
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
 
 ## Iterative Design Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+We built our initial paper prototype based on our design and research. 
+We also geared the prototype to be able to complete the two selected tasks. 
+Once we had our paper prototype, we set out to find participants to gather two heuristic evaluations as well as three usability tests. 
+We gained very insightful feedback from our participants from these tests. 
+Some of the issues in our prototype were with notifications, 
+participants pointed out that it was difficult to distinguish medicine vs symptomatology reminders. 
+Another issue was there was no help page to assist the user in navigating the app. 
+There was also an issue of non functionality with the settings and emergency contact pages not having screens in the prototype. 
+A general piece of feedback we got was participants like consistency and simplicity across screens in the app.  
 
-### Title for an Insight
 
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
+We finalized our paper prototype by addressing the issues found during testing. 
+Some of the changes include color coding reminders to distinguish between medicine vs symptoms. 
+Another change was adding functionality for settings and emergency contacts as well as a help button for navigation. 
+We also made sure to emphasize consistency and simplicity across the screens, adding in back arrows for pages deeper in the app and help button on each appropriate page. 
+To add to the simplicity we made sure that it was easier to understand for the user to enter medication and submit symptoms.
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
 
-</ProjectImageBlock>
+Based on our final paper prototype, we creating a digital mockup:
 
-### Title for an Insight
+**Simplifying Symptom Entry Sequence**
 
 <ProjectImageBlock
     image={{
         src: imagePlaceholder1200x800,
     }}
     caption={
-        "This is a caption."
     }
     width={6}
     maxHeight={"400px"}
->
-
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
-
-</ProjectImageBlock>
-
-### Title for an Insight
+></ProjectImageBlock>
 
 <ProjectImageBlock
     image={{
         src: imagePlaceholder1200x800,
     }}
     caption={
-        "This is a caption."
     }
     width={6}
     maxHeight={"400px"}
->
+></ProjectImageBlock>
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
-
-</ProjectImageBlock>
-
-## Resulting Design
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
     caption={
-        "This caption for the entire block will span the set of images."
     }
-    width={8}
+    width={6}
     maxHeight={"400px"}
->
+></ProjectImageBlock>
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
-
-</ProjectImagesBlock>
-
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
     caption={
-        "This caption for the entire block will span the set of images."
     }
-    width={8}
+    width={6}
     maxHeight={"400px"}
->
+></ProjectImageBlock>
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+From one of our usability tests, the participant found it difficult to submit their symptoms through the phone application. 
+The participant found the initial paper prototype design screen for submitting symptoms confusing, especially the “Load Symptom Group” button. 
+Taking into account this feedback, we simplified the screens for submitting symptoms by removing confusing buttons 
+and not having too many tabs on one screen so that the user is not confused and to keep the screen easier to navigate. 
+We made sure to separate the phone and watch app by distinguishing symptom groups (phone app) and easy suptoms (watch app).
 
-</ProjectImagesBlock>
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+**Adding important functionality of features**
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+The usability tests revealed that the settings and emergency contact pages were non-functioning and a relevant feature as 2 of the participants tried tapping on each of the pages. 
+One participant was confused on the meaning of the emergency contact button and even asked during the test, 
+“What does this phone icon do? Does it link to your phone contacts app?”. 
+Using the feedback, we made sure to add functionality to the settings and emergency contact page so that we could increase accessibility of our product and clear up any confusion. 
+We made sure to maintain simplicity of the app and make the screens of the setting and emergency contact pages clear and easy to navigate. 
+We maintained consistency by making the emergency contact page similar to the list of medication alerts page. 
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+**Improving visibility and readability of the application**
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+From our usability tests, a participant pointed out that it was hard to know if medicine was taking for today. 
+Our initial paper prototype indicated medicine as taken by the filled in box that corresponds to that medicine. 
+Another issue that arose was that the reminders did not give any instructions or dosage quantity when the user received the notification. 
+This was exposed in each of our usability tests as each participant pointed that out. To fix these issues, 
+we added a green checkmark to ensure there is no confusion if the medicine was taken. 
+The watch app also visibly tells the user that the medication was taken. 
+Additionally, the watch and phone reminders specify the dosage quantity to the user. 
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+### Resulting Design
+
+The final design involves a mobile application with watch integration, 
+both of which can be used for mediation notification delivery and symptom tracking. 
+Alerts are created and managed on the mobile app but are delivered to both devices at the scheduled time. 
+Symptom entry on the watch centers rapid, easy entry by setting up the queried symptoms on the mobile application first through “Easy Symptoms”. 
+If preferred, tracking is enabled on the mobile application where a more robust interface is offered including a free text entry box. 
+Past entries can be easily viewed by selecting dates on the calendar interface of the symptom tracking page. 
+Convenience and safety features such as emergency contacts are available to input if desired.
+
+**Task 1**
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+        "When the main dashboard is opened on the home page, there are initially no reminders set." +
+        "Selecting the medication icon leads to a page where new medication reminders can be created."
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+        "When it’s time to take a medication based on its set alert time, notifications are sent via the phone and watch (if connected)." + 
+        "Snooze pauses the alarm for five minutes. By selecting the notification icon or “Taken” on the watch, the app can be notified that the medication has been taken."
+
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+        "After confirming that they’ve taken the medication, this information is reflected in the application interface." + 
+        "On the go, the watch informs the success by a confirmation message."
+
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+**Task 2**
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+        "When it’s time to record symptoms, notifications are sent via the phone and watch (if connected)." + 
+        "Snooze pauses the alarm for five minutes. By selecting the notification icon or “Record Now” on the watch the symptom entry process is initiated."
+
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+        "If on the watch, the preset Easy Symptoms questionnaire begins (to choose preset symptoms queried: see the last two images)." + 
+        "If on the phone, selecting the current day brings the symptom entry view where medications and symptoms can be added to a list for today." + 
+        "Optional notes can be added as free text."
+
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+        "From the dropdown menus current medications can be selected." + 
+        "The second menu displays associated symptoms to choose from." +
+        "These symptoms can be selected and added to a list for tracking purposes."
+
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+        "The preset Easy Symptoms queried on the watch can be set and changed via the Easy Symptoms button on the main Symptoms page." + 
+        "This page displays a dropdown menu."
+
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imagePlaceholder1200x800,
+    }}
+    caption={
+        "The dropdown menu displays symptoms associated with current medications." + 
+        "These can be chosen and added to the watch Easy Symptoms for fast tracking."
+
+    }
+    width={6}
+    maxHeight={"400px"}
+></ProjectImageBlock>
