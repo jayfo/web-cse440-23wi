@@ -54,7 +54,7 @@ module.exports = {
             },
             // Image and File resources from the site
             {
-                test: /\.(jpg|pdf|png|pptx)$/,
+                test: /\.(jpg|JPG|jpeg|JPEG|pdf|PDF|png|PNG|pptx|PPTX)$/,
                 type: 'asset/resource',
                 generator: {
                     filename: 'assets/site/[name][ext]'

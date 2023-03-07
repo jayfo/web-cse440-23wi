@@ -120,14 +120,13 @@ import mockupOverview from "./assets/post/mockupOverview.PNG";
     maxHeight={"400px"}
 >
 
-<ProjectSubtitle>Problem</ProjectSubtitle>
+### Problem
  
 The overall problem space we explored was that the gym is can be a stressful environment for beginners who don't know how to use equipment and people often find it difficult to manage their time when they're at the gym because of busyness in different sections. Within the gym, there is an internal pressure, particularly against women and people who don't stereotypically fall into the "gym bro" stereotype. This pressure makes it difficult to work out, and often times, this pressure also leads to a hesitance to ask for help when one is struggling. People also find that machines can be super busy at different times of the day and find it difficult to stick to a schedule and remain on time. As a result, this leads to people not pushing themselves as hard, not asking for help, and sometimes even skip their gym workout altogether. This results in people seeing the gym environment as a burden rather than a routine.
 
-<ProjectSubtitle>Design</ProjectSubtitle>
+### Design
  
 Hence, we designed a new app to combat the issue of hostile gym environments and gym hesitancy. We are proposing a gym app that would help to combat this issue. This gym app would be an app that would be specially catered to each gym, and it would include a map of the gym that would help to guide the users, and guide them around the gym most effectively. The app would have two primary functionalities. One of these functionalities was knowing how crowded the gym is before going while measuring the business of specific machines. The other functionality was understanding the various muscle groups and fitness areas that a machine primarily targets and guiding the user through the process of using the machines effectively to avoid injury. 
-
 
 </ProjectImageBlock>
 
@@ -172,7 +171,6 @@ We found that more experienced gym members largely had the most difficulty deali
 
 People who go to the gym more casually and as beginners had more issues feeling fearful of getting injured when learning about how to use new equipment. Because of this, they didn't feel confident enough to try new machines and step out of their comfortome. For example, one of the beginner-level participants we interviewed often uses the treadmill, but wanted to try weightlifting. However, because they had difficulty understanding how to properly use the squat rack, position themselves, what weight to start with, and how to perform the exercise correctly without hurting their backs and knees, they lacked motivation to continue learning. It would be time consuming without proper aid and help. 
 
-
 </ProjectImagesBlock>
 
 ### Intimidation and Fear of Asking for Help
@@ -188,7 +186,7 @@ After making the necessary design modifications, we did usability tests with thr
 
 ### Color Coding for Easy Interpretation
 
-<ProjectImageBlock image={{ src: colorCodedMap, }} caption={ "Our updated color-coded map." } width={6} maxHeight={"400px"}
+<ProjectImageBlock image={{ src: colorCodedMap, }} caption={ "Our updated color-coded map." } width={6} maxHeight={"400px"}>
 
 The first important revision was to color code the map of the floors of the gym. When looking at the map of the gym, it used to have no way to indicate the busyness of a room in the gym. By color-coading the map of the gym, the participant can see how busy the space is before they enter. We learned this was an important feature during usability testing because one of our participants said they would not enter a room in the gym if it was too busy. In our previous design, the participant would have to walk into a room to see how busy it is. We wanted to alleviate this step of having to walk into the room by color-coding the rooms in the gym by busyness. This is important because it saves the participant time and makes going to the gym a smoother experience, which is one of the main goals of our application.
 
@@ -196,7 +194,7 @@ The first important revision was to color code the map of the floors of the gym.
 
 ### Modifying Navigation Bar
 
-<ProjectImageBlock image={{ src: newNavBar, }} caption={ "Our updated navigation bar." } width={6} maxHeight={"400px"}
+<ProjectImageBlock image={{ src: newNavBar, }} caption={ "Our updated navigation bar." } width={6} maxHeight={"400px"}>
 
 The second important revision we made was changing the language in the navigation bar. In our previous design, we had the home screen labeled as Gym Status. We learned this language by completing the task of, “seeing how busy a machine is,” confusing for participants. Rather than going to the map, one of the participants in our usability test went to the “Gym Status” screen to find the busyness of a machine. We are going to combat this confusion by making the home screen titled, “Home.” This is important because it will allow participants to clearly achieve the task of, “seeing how busy a machine is,” without confusion.
 
@@ -206,9 +204,6 @@ The second important revision we made was changing the language in the navigatio
 
 One revision we made to promote the inclusivity of people at various knowledge levels about the gym and their personal anatomy was the revision related to popping up an image showing muscle groups that are targeted instead of just listing them. Oftentimes, people who are attempting to gain more familiarity with muscle groups targeted by different machines might not be able to identify specific muscle groups by just their name, so having a diagram there to aid them in their learning process is essential. We had made an unintentional assumption that the people using our app would already be familiar with where specific muscle groups are located if they wanted to use a specific machine that they believed might target those muscles. 
 Another revision we made related to meeting the Web Content Accessibility Guidelines was increasing the font size of the machine status because it was too small beforehand. WCAG guidelines advise bigger text to ensure that text is not illegible. Conceptually, our design process so far has been targeted towards promoting inclusive environments at the gym so we didn't have to make many modifications about the overall design process. Some assumptions we made were related to visibility of colors to indicate the busyness of gym sections. We used green, red and yellow but the green-red spectrum is difficult for people who are colorblind to differentiate. In future iterations, we hope to create more distinct and contrasting color options and also turn a lot of the more wordy sections into separate sections using buttons so text-to-speech applications don’t have to read aloud everything all at once.
-
-
-</ProjectImageBlock>
 
 ## Resulting Design
 
@@ -225,6 +220,8 @@ Another revision we made related to meeting the Web Content Accessibility Guidel
  
 In implementing the digital mockup, we made a few different design decisions depending on inconsistencies we found in the paper prototype and more realistic options that should be available to users. We formatted the gym map to no longer be diagonal across the page because a horizontal layout is generally more familiar to people using maps for reference. We decided to keep the information on the machine info page fairly minimal and instead of buttons leading up to pages with more detailed information. For example, we have Status Information, Path to the machine, and Equipment User Information for video tutorials and targeted muscles. We added more information to our map legend to indicate the meaning of different colors related to section busyness. We also made the map section more minimal in terms of determining if a machine was open or not, based on the color of the machine, than having two background indicators as seen in the paper prototype. Lastly, we noticed in that there was missing functionality in terms of navigating in-between pages, such as traversing the map if there were multiple floors and added buttons to reduce navigation time to important pages that could complete the task quicker for the user, such as, “My Workouts” in the overall map page in addition to having it in the machine map page as well. 
 
+</ProjectImageBlock>
+
 <ProjectImageBlock
     image={{
         src: task1,
@@ -238,6 +235,8 @@ In implementing the digital mockup, we made a few different design decisions dep
 
 Walkthrough: Participants can see the busyness of the rooms at the gym. Then they can click a room to see the busyness of each machine, once they click a machine, they can see the status of it clearly marked above the image of the machine. In addition, participants could alternatively diverge from the map path to complete the task and click the My Workouts button to show the participant’s workouts and their status for that exercise and machine that is involved. 
 
+</ProjectImageBlock>
+
 <ProjectImageBlock
     image={{
         src: task2,
@@ -248,6 +247,7 @@ Walkthrough: Participants can see the busyness of the rooms at the gym. Then the
     width={6}
     maxHeight={"400px"}
 >
- 
 
 Walkthrough: Participants can click on the “Information” button in order to see a video tutorial and a list of muscle groups the machine works in addition to diagrams of the muscle groups. 
+
+</ProjectImageBlock>
