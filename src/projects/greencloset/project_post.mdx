@@ -60,6 +60,10 @@ import imageTeamPerson4 from "./assets/team/Wei.png";
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+import imageHomePage from "./assets/post/homePageShuffle.png";
+import imageClosetPages from "./assets/post/ClosetViews.png";
+import imageIndividualStats from "./assets/post/individualStats.png";
+import imageConfirm from "./assets/post/confirmationOutfit.png";
 
 {/* Problem and Design Overview */}
 import problemUserPage from "./assets/post/problemUserPage.png";
@@ -340,73 +344,92 @@ This insight emerged during our third usability test when the participant was
 
 ## Resulting Design
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-    ]}
-    direction={"row"}
+Our resulting design for Green Closet consists of the scanner and an
+application. The scanner makes outfit tracking intuitive alongside the physical 
+act of taking items out of your closet and simplifies the process of uploading
+images for second-hand exchange. With the application, sustainable outfit 
+planning is accomplished by the algorithm suggesting outfits according to 
+personal style and usage statistics, encouraging participants to use their
+closets to the fullest. The participant can also use their statistics to 
+identify their least-worn clothes and upload them to our second-hand
+exchange platform.  
+
+### Task 1: Identifying Personal Style and How You Use Your Clothes
+
+<ProjectImageBlock
+    image={{
+        src: imageHomePage,
+    }}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Homepage, clicking shuffle, and clicking on an item in the outfit."
     }
     width={8}
     maxHeight={"400px"}
 >
 
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
+The homepage recommends an outfit based on personal style self-tracking data,
+weather, and activities. Clicking the shuffle button generates a new 
+recommended outfit. Clicking on an item in the outfit provides quick stats and 
+options to browse the closet to replace that item, view detailed statistics for
+that item, or shuffle only that item in the outfit.
 
-</ProjectImagesBlock>
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-    ]}
-    direction={"row"}
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imageClosetPages,
+    }}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Clothes tab: View full digitized closet. Outfits tab: View closet sorted by outfits and personal style. Stats tab: View clothes and outfits sorted by usage statistics."
     }
     width={8}
     maxHeight={"400px"}
 >
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+Clicking on Browse from the previous screen takes us to the closet, where the 
+participant can replace any items in their outfit. They can also view their
+closet sorted by outfits/personal style or by statistics (most or least worn 
+items/outfits).
 
-</ProjectImagesBlock>
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imageIndividualStats,
+    }}
+    caption={
+        "Detailed statistics for each item of clothing."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+Clicking on the Detailed Stats button gives us the leftmost page, from where
+the participant can view graphical representations of how often they've worn 
+that item, outfit tags, options to add the item to their Give profile, or options
+to add it to their outfit for the day. Upon pressing Add to Outfit, the item
+is added to the outfit on the homepage.
+
+
+</ProjectImageBlock>
+
+<ProjectImageBlock
+    image={{
+        src: imageConfirm,
+    }}
+    caption={
+        "Confirming the outfit of the day."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+When the participant clicks Wear It!, a pop-up confirms that they want to select
+the outfit on the homepage for the day, which helps the algorithm track clothing
+usage. When the participant confirms the outfit, their closet usage statistic
+updates to show them their sustainability progress. 
+
+
+</ProjectImageBlock>
