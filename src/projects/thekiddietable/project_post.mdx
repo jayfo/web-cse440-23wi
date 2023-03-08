@@ -65,6 +65,8 @@ import imageHome from "./assets/post/home.png";
 import imageLogging from "./assets/post/logging.png";
 import imageOverview from "./assets/post/overview.png";
 import imageStory from "./assets/post/storyboard.png";
+import task1 from "./assets/post/task1.png";
+import task2 from "./assets/post/task2.png";
 
 
 # The Kiddie Table
@@ -116,9 +118,19 @@ import imageStory from "./assets/post/storyboard.png";
     maxHeight={"400px"}
 >
 
-The ages of 2-7 are a crucial stage of development for children. During this age range, a child needs to receive a balanced diet as what they consume will ultimately affect their health and growth. Additionally, it is also during the ages of 2-7 where a child’s diet requirement undergoes many changes, so it is important for caretakers to adapt to these changes. As such, caretakers should be able to effectively track their child’s diet. However, there are not many effective solutions offered currently and the solutions that offer diet tracking are not targeted towards children.
+The ages of 2-7 are a crucial stage of development for children. During this age range, a child
+needs to receive a balanced diet as what they consume will ultimately affect their health and growth.
+Additionally, it is also during the ages of 2-7 where a child’s diet requirement undergoes many changes,
+so it is important for caretakers to adapt to these changes. As such, caretakers should be able to
+ effectively track their child’s diet. However, there are not many effective solutions offered currently
+ and the solutions that offer diet tracking are not targeted towards children.
 
-Our solution is The Kiddie Table which is a smart table that simplifies meal tracking and planning for caretakers. By providing insightful analytics about a child’s nutritional information over time and utilizing an organized calendar system, caretakers can track and plan a child’s meal with very little hassle. Kids can interact with the table too through the use of avatars, customizations, and a rewards system. While interacting with the table, kids grow to develop healthy relationships with food in a fun yet educational way.
+Our solution is The Kiddie Table which is a smart table that simplifies meal tracking and planning
+for caretakers. By providing insightful analytics about a child’s nutritional information over time
+and utilizing an organized calendar system, caretakers can track and plan a child’s meal with very
+little hassle. Kids can interact with the table too through the use of avatars, customizations,
+and a rewards system. While interacting with the table, kids grow to develop healthy relationships
+with food in a fun yet educational way.
 
 
 </ProjectImageBlock>
@@ -133,18 +145,15 @@ of 2 and 7 years. For the caretakers, we interviewed a first time father of a 18
 a first time mother of a 9-month-old and the mother of 4 children aged 0-6 years. Among the
 healthcare professionals, we interviewed a pediatrician and a gynecologist to gain more insight
 into our problem statement.
-Since none of us had extensive experience with children, we needed to get the perspective
-of others who knew more about children. We needed to hear from caretakers because of they
-are the target users of our design. We also needed to hear from medical professionals to
-understand the physical and psychological milestones that children reach between the ages
-of 2 and 7 years. For the caretakers, we interviewed a first time father of a 18-month-old,
-a first time mother of a 9-month-old and the mother of 4 children aged 0-6 years. Among the
-healthcare professionals, we interviewed a pediatrician and a gynecologist.
-
 
 ### Most caretakers track their children's diets mentally
 
-During our research study, we learned that caretakers tend to not formally track their children's diet. This was true for both first time parents and parents of multiple children. Mental tracking does not facilitate sharing the meal tracking and planning with other caretakers. This can become particularly challenging when a caretaker cares for multiple children because children tend to trade their food. It can also be challenging when there are pets in the household because children would sometimes feed their food to the family's pet.
+During our research study, we learned that caretakers tend to not formally track their children's diet.
+This was true for both first time parents and parents of multiple children. Mental tracking does not
+facilitate sharing the meal tracking and planning with other caretakers. This can become particularly
+challenging when a caretaker cares for multiple children because children tend to trade their food.
+It can also be challenging when there are pets in the household because children would sometimes
+feed their food to the family's pet.
 
 
 ### Children are really good at intuitive eating
@@ -178,13 +187,23 @@ aspects of their child's life including feeding. This suggests that a social asp
 
 ## Iterative Design Process and Key Insights
 
-After our research, we determined the two tasks that we wanted to center our design on were tracking meals of a child and developing healthy eating.
+After our research, we determined the two tasks that we wanted to center our design on were
+tracking meals of a child and developing healthy eating.
 
-We developed our initial paper prototype, and conducted two usability tests to better help us understand the strengths and weaknesses of our design. From those usability tests, we learned that our design was not very appealing to children, and the language being used was confusing for our participants (e.g. the use of the words “add to log” vs “add to plan”).
+We developed our initial paper prototype, and conducted two usability tests to better help us
+understand the strengths and weaknesses of our design. From those usability tests, we learned that
+our design was not very appealing to children, and the language being used was confusing for our
+participants (e.g. the use of the words “add to log” vs “add to plan”).
 
-For our final design, we incorporated feedback received from our usability tests and made changes to our design accordingly.  We changed the design of buttons across the design and changed the language to something more clear and intuitive for our participants. In addition to that, we introduced a gamified design that would allow children to help their parents track meals in a fun and interactive way by feeding customizable avatar and gaining points.
+For our final design, we incorporated feedback received from our usability tests and made changes
+to our design accordingly.  We changed the design of buttons across the design and changed the
+language to something more clear and intuitive for our participants. In addition to that, we
+introduced a gamified design that would allow children to help their parents track meals in a fun
+and interactive way by feeding customizable avatar and gaining points.
 
-It was because of these changes that our original tasks were intertwined. The tracking of the meals with our design would as a result fulfill the developing healthy eating task. We finally defined the following tasks for our project:
+It was because of these changes that our original tasks were intertwined. The tracking of the meals
+with our design would as a result fulfill the developing healthy eating task. We finally defined
+the following tasks for our project:
 * Tracking the meals of a child
 * Planning the meals of a child
 
@@ -242,24 +261,12 @@ Our overview page is something that we focused a lot of our energy on. We were l
 
 ## Resulting Design
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: task1,
+    }}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Task 1: Tracking the meals of a child."
     }
     width={8}
     maxHeight={"400px"}
@@ -270,30 +277,24 @@ Task 1: Tracking the meals of a child
 In this interaction, the child records that they ate a watermelon today and drags a watermelon over into the avatar's mouth. By doing this, the Kiddie Table will track that a watermelon was consumed by the child today.
 
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
 Task 2: Planning the meals of a child
 The action of editing a future days’ plan is shown here. We select the day we want to plan for. Then we select the meal we want to add to. Finally, we type in what we plan to eat and click “submit plan”. In this example,  Wednesday, Feb 16th is considered a day in the future.
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: task2,
+    }}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Task 2: Planning the meals of a child"
     }
     width={8}
     maxHeight={"400px"}
 >
 
 
-</ProjectImagesBlock>
+</ProjectImageBlock>
 
 
 
