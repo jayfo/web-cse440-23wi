@@ -14,6 +14,7 @@ import imageLeaveButtonsMarked from "./assets/post/prototype-leave-buttons-marke
 import imageAddedHistoryText from "./assets/post/prototype-added-to-history-help-text.png";
 import imageVotingExplainer from "./assets/post/digital-voting-explainer.png";
 import imagePrototypeAll from "./assets/post/prototype-all.png";
+import imagePrototypeVoting from "./assets/post/prototype-voting.png";
 import imageDigitalOnboard from "./assets/post/digital-onboard.png";
 import imageDigitalParty1 from "./assets/post/digital-party-1.png";
 import imageDigitalParty2 from "./assets/post/digital-party-2.png";
@@ -129,15 +130,18 @@ and we wanted to be intentional about diversifying our participant pool in this 
 <ProjectImagesBlock
     images={[
         {
+            src: imagePrototypeVoting,
+            alt: "A paper prototype of our voting screen, with restaurant info and Yes, Meh, and Veto buttons."
+        },
+        {
             src: imageFoodPartyVotingButtons,
-            caption: "In our digital prototype, the Food Party feature was designed in response to our participants'" +
-                " frustrations in group settings.",
             alt: "Three voting buttons, all of different colors: Yes, Meh, and Veto. There is also a cancel button. "
         },
     ]}
     direction={"row"}
-    width={4}
-    maxHeight={"300px"}
+    width={6}
+    maxHeight={"350px"}
+    caption="In our paper and digital prototypes, the Food Party feature was designed in response to our participants' frustrations in group settings."
 >
 > Usually, we are brainstorming places as a group that might fit my food needs. Then 
 > I have the final say as to whether or not they will work out.
@@ -152,11 +156,9 @@ and we wanted to be intentional about diversifying our participant pool in this 
 Our research shows that dining with a group is often the most challenging and unresolved
 issue for our participants. 
 
-Turns out, this can actually be a complex process. There are the logistics in sharing everybody's dietary
-restrictions and finding the overlap, but this is also a process that 
-requires a lot emotional safety.
-And sometimes, people suffer from indecision and just hate to be the person to decide for a group.
-As the number of group members increases, this frustration also grows exponentially.
+This is a complex process, from each person having to share their dietary restrictions, to
+people suffering from indecision or just hating to be the person to decide for a group. As the number of group
+members increases, this frustration also grows exponentially.
 
 ### Restaurant discovery should be a first-class task
 
@@ -328,6 +330,11 @@ explain how the restaurants were selected for this process and what their voting
 
 After completing our usability testing process and drafting revisions on our paper prototype, 
 we created a high-fidelity digital mockup using Figma.
+
+- You can create a group with your friends.
+- You and your group can decide on a restaurant to go to through the process of voting.
+- You can document your dietary restrictions and preferences.
+- You can record, rate, or flag restaurants you have previously visited.
 
 ### Onboarding
 
