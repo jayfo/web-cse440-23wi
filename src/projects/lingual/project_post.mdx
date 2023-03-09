@@ -67,6 +67,8 @@ import PaperPrototypeOverview from "./assets/post/PaperPrototypeOverview.jpg"
 
 import Navigation from "./assets/post/navigation.jpg"
 import Popups from "./assets/post/popups.jpg"
+import PopupsBefore from "./assets/post/popups_before.jpg"
+import PopupsAfter from "./assets/post/popups_after.jpg"
 import Skipquestions from "./assets/post/skipquestions.jpg"
 
 
@@ -225,13 +227,18 @@ that the design was clear but also pointed out issues with our placement test pr
 
 ### Making Pop-Ups More User Friendly
 
-<ProjectImageBlock
-    image={{
-        src: Popups,
-    }}
-    caption={
-        "Improved Pop-Ups Insight."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+            src: PopupsBefore,
+            caption: "Original Pop-up Design",
+        },
+        {
+            src: PopupsAfter,
+            caption: "Revised Pop-up Design",
+        }
+    ]}
+    direction={"row"}
     width={8}
     maxHeight={"400px"}
 >
@@ -242,7 +249,7 @@ displaying the Lingual score or to remedy an error in the case of leaving questi
 placement test. In order to improve the heuristic of User Control and Freedom, subsequent paper 
 prototypes included explicit closeouts such as "x" icons in corners and buttons in certain pop-up dialogs.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Including Option to Skip Questions
 
