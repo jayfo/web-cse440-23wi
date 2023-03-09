@@ -52,10 +52,10 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
   *   - Be sure all images are the same height.
 */}
 
-import imageTeamPerson1 from "./assets/team/firstname1.png";
-import imageTeamPerson2 from "./assets/team/firstname2.png";
+import nancyImage from "./assets/team/nancy.jpg";
+import rachelImage from "./assets/team/rachel.jpg";
 import zephyrImage from "./assets/team/zephyr.png";
-import imageTeamPerson4 from "./assets/team/firstname4.png";
+import clarisImage from "./assets/team/claris.png";
 
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
@@ -88,32 +88,51 @@ import mirrorRoutine from "./assets/post/mirror-routine.png";
 import mirrorGallery from "./assets/post/mirror-gallery.png";
 import mirrorProgressPic from "./assets/post/mirror-progress-pic.png";
 
+import preNavbar from "./assets/post/pre_navbar.png";
+import postNavbar from "./assets/post/post_navbar.png";
+import preMirrorNav from "./assets/post/pre_mirrornav.png";
+import postMirrorNav from "./assets/post/post_mirrornav.png";
+import preHome from "./assets/post/pre_homepage.png";
+import postHome from "./assets/post/pre_homepage.png";
+import preProgress from "./assets/post/pre_progressbutton.png";
+import postProgress from "./assets/post/post_progressbutton.png";
+import thumbnail from "./assets/post/project_thumb.png";
+
 # Tracne
 
 <ProjectSubtitle>Promoting healthy skincare habits</ProjectSubtitle>
+
+<TeamMemberGallery members={[
+    {
+        name: "",
+        photo: thumbnail,
+    }
+]} />
+
 
 ## Team
 
 <TeamMemberGallery members={[
     {
-        name: "Nancy Jiminez-Garcia",
-        photo: imageTeamPerson1,
-    },
-    {
-        name: "Claris Winston",
-        photo: imageTeamPerson2,
+        name: "Nancy Jimenez-Garcia",
+        photo: nancyImage,
     },
     {
         name: "Zephyr Tao",
         photo: zephyrImage,
     },
     {
+        name: "Claris Winston",
+        photo: clarisImage,
+    },
+    {
         name: "Rachel Alwan",
-        photo: imageTeamPerson4,
+        photo: rachelImage,
     },
 ]} />
 
 ## Problem and Design Overview
+
 
 {/* A ProjectImageBlock displays text with an associated image.
   * - The image is configured through properties on the opening `ProjectImageBlock` tag.
@@ -126,15 +145,18 @@ import mirrorProgressPic from "./assets/post/mirror-progress-pic.png";
   * Later in the template you will also find examples of the plural `ProjectImagesBlock` tag.
 */}
 
-<ProjectImageBlock
-    image={{
-        src: mirrorMain,
-    }}
-    caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+            src: mirrorMain,
+            caption: "Prototype of the smart mirror, the primary component in our design.",
+        },
+        {
+            src: homepage,
+            caption: "Prototype of the home page on the mobile app.",
+        },
+    ]}
+    direction={"row"}
     width={6}
     maxHeight={"400px"}
 >
@@ -143,7 +165,7 @@ According to [Yale Medicine](https://www.yalemedicine.org/conditions/acne), 85% 
 
 Our design is a smart mirror with a corresponding mobile app, which will help people build consistency with their acne treatment routine and understand what might be causing changes in their acne. The mirror provides a well-lit space for the person to complete their skincare routine, and it has a built-in camera to take progress photos of their face. A built-in screen on the mirror has the same functionalities as the mobile app. These features include a place for the person to record their routine components and consistency, log aspects of their lifestyle that may affect acne, view their gallery of progress photos, and receive reminders to complete their routine.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ## Design Research Process and Key Insights
 
@@ -151,11 +173,11 @@ Our design is a smart mirror with a corresponding mobile app, which will help pe
     images={[
         {
             src: sketches,
-            caption: "caption",
+            caption: "Initial sketch of our design.",
         },
         {
             src: storyboard,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
+            caption: "Storyboard showing how a person might use our design.",
         },
     ]}
     direction={"column"}
@@ -190,7 +212,7 @@ Social media and online forums are commonly-used platforms to learn about acne t
         src: initialPrototype,
     }}
     caption={
-        "This is a caption."
+        "Overview of paper prototype with the different frames laid out."
     }
     width={6}
     maxHeight={"400px"}
@@ -204,49 +226,83 @@ After developing the initial paper prototype, we ran an inspection-based heurist
 
 ### Improving Navigation
 
-<ProjectImageBlock
-    image={{
-        src: navigation,
-    }}
-    caption={
-        "This is a caption."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+            src: preNavbar,
+            caption: "Before"
+        },
+        {
+            src:postNavbar,
+            caption: "After"
+        }
+    ]}
+    direction={"row"}
     width={6}
     maxHeight={"400px"}
 >
 
 In the inspection-based heuristic test, the participant noted that the mobile app and mirror screen did not have clear ways to navigate between different displays. To address this significant problem, we created tabs for the main categories of displays and put a constant navigation bar at the bottom of the app. We added dot navigation indicators at the bottom of the mirror screen to indicate that the person can swipe left and right to switch between displays.
 
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: preMirrorNav,
+            caption: "Before"
+        },
+        {
+            src:postMirrorNav,
+            caption: "After"
+        }
+    ]}
+    direction={"row"}
+    width={6}
+    maxHeight={"400px"}
+>
+
 Beyond simple navigation, one participant noted that it was a lot to monitor the Routine Tracker and Lifestyle Log on different tabs, and it would be helpful to view them side-by-side. This was a great point, since acne is the result of a combination of factors, including someone’s routine consistency and lifestyle habits/occurrences. Because of this, we decided to combine the Routine Tracker and Lifestyle Log into one tab, generalized to Tracker. This would allow the person to view potentially correlated information in one place.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
+
 
 ### Taking Progress Photos
 
-<ProjectImageBlock
-    image={{
-        src: progressPhoto,
-    }}
-    caption={
-        "This is a caption."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+            src: preProgress,
+            caption: "Before"
+        },
+        {
+            src:postProgress,
+            caption: "After"
+        }, 
+    ]}
+    direction={"row"}
     width={6}
     maxHeight={"400px"}
 >
 
 In the usability tests, when the participant was asked to take a progress photo on the mirror, they were unsure how to take the photo and if the photo was even taken. Our original idea was that the photo would be automatically taken once the person positioned themselves correctly, but this may present itself as a hidden affordance. As a result, we added a progress photo button on the mirror screen to capture the photo and also added a screen to confirm that the photo was successfully saved.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Reducing Confusion and Discouragement
 
-<ProjectImageBlock
-    image={{
-        src: discouragement,
-    }}
-    caption={
-        "This is a caption."
-    }
+<ProjectImagesBlock
+    images={[
+        {
+            src: preHome,
+            caption: "Before"
+        },
+        {
+            src:postHome,
+            caption: "After"
+        }
+    ]}
+    direction={"row"}
     width={6}
     maxHeight={"400px"}
 >
@@ -255,7 +311,7 @@ On the homepage of the mobile app, we initially had a graph on acne frequency an
 
 We also initially had a streak for how many days people had fully completed their routine, and it would be reset whenever people stopped their routine for a day. Taking feedback from class staff and participants, we realized that this streak could actually discourage people from building habit consistency. So, we switched the streak to a count that keeps track of how many total days a person has completed their routine to encourage them to keep going. The maximum streak count only goes up, so people are encouraged to use the app.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ## Resulting Design
 
@@ -272,13 +328,13 @@ We also initially had a streak for how many days people had fully completed thei
         {
             src: account,
         },
-        {
-            src: imagePlaceholder300x600,
-        },
+        // {
+        //    src: imagePlaceholder300x600,
+        //},
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Home screen and settings pages on the mobile app."
     }
     width={8}
     maxHeight={"400px"}
@@ -296,20 +352,17 @@ The remote button on the settings page and the home page allows people to contro
     images={[
         {
             src: mirrorMenu,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
+        }
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Menu on the smart mirror."
     }
     width={8}
-    maxHeight={"400px"}
+    maxHeight={"300px"}
 >
 
-This is the drop-down menu on the screen in the mirror. From left to right, the logos represent: pairing to a mobile device via bluetooth, connecting the mirror to wifi, decreasing the brightness of the mirror (on a scale of 1-10), increasing the brightness of the mirror, and a help option for further information.
+This is the drop-down menu on the screen on the mirror. From left to right, the logos represent: pairing to a mobile device via bluetooth, connecting the mirror to wifi, decreasing the brightness of the mirror (on a scale of 1-10), increasing the brightness of the mirror, and a help option for further information.
 
 </ProjectImagesBlock>
 
@@ -326,7 +379,7 @@ This is the drop-down menu on the screen in the mirror. From left to right, the 
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Screens on the mobile app for addings and modifying reminders."
     }
     width={8}
     maxHeight={"400px"}
@@ -350,13 +403,16 @@ People can add custom reminders that will nudge them at specified times to compl
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Frames showing the routine part of the tracker page on the mobile app."
     }
     width={8}
     maxHeight={"400px"}
 >
 
-TEXT
+To help with staying consistent with one's routine, people can track the completion of
+their skincare routine(s) on the tracker page of the mobile app, where the routine for the current day can be viewed and marked as complete,
+and additional routines can be added/modified. Routine completion from previous days of the month
+can also be viewed.  
 
 </ProjectImagesBlock>
 
@@ -371,15 +427,16 @@ TEXT
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Frames showing the reminders on the screen on the mirror."
     }
     width={8}
     maxHeight={"400px"}
 >
 
-TEXT
+The reminders to complete the skincare routine(s), and steps for the upcoming routine is also shown on the mirror screen.
 
 </ProjectImagesBlock>
+### Task 2: Determine what specific factors may be causing changes in your skin, and track the progress over time.
 
 <ProjectImagesBlock
     images={[
@@ -392,17 +449,18 @@ TEXT
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Frames on the mobile app for the lifestyle log."
     }
     width={8}
     maxHeight={"400px"}
 >
 
-In the tracker, people can log lifestyle factors of their choice, and monitor them by either answering the same question(s) about it at a set frequency, or they can add their own notes about it.
+In order to determine factors affecting one's skin, people can log lifestyle factors of their choice in the tracker page, and monitor 
+them by either answering the same question(s) about it at a set frequency, 
+or they can add their own notes about it.
 
 </ProjectImagesBlock>
 
-### Task 2: Determine what specific factors may be causing changes in your skin, and track the progress over time.
 
 <ProjectImagesBlock
     images={[
@@ -415,13 +473,15 @@ In the tracker, people can log lifestyle factors of their choice, and monitor th
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Frames showing the gallery page on the mobile app."
     }
     width={8}
     maxHeight={"400px"}
 >
 
-TEXT
+The gallery of progress photos can be viewed on the mobile app. Preferences for 
+how often to remind to take progress photos can also be changed. The corresponding trackers for the past week
+can also be viewed in the photos to more easily correlate routine completion and lifestyle factors with changes to one's skin. 
 
 </ProjectImagesBlock>
 
@@ -436,13 +496,15 @@ TEXT
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Frames showing the toggle for viewing gallery photos with and without the model."
     }
     width={8}
     maxHeight={"400px"}
 >
 
-TEXT
+We added a toggle for viewing the photos in the gallery with and without the toggle, and 
+added a help button in case people are confused about what the model means. One can also hover 
+over acne on their skin and see information about what that might mean. 
 
 </ProjectImagesBlock>
 
@@ -457,7 +519,7 @@ TEXT
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        "Frames showing the gallery on the mirror screen."
     }
     width={8}
     maxHeight={"400px"}
