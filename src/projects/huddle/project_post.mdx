@@ -60,9 +60,7 @@ import imageTeamPerson4 from "./assets/team/garima.png";
 import friendsImage from "./assets/post/findfriendstowalkhome.png";
 import busImage from "./assets/post/bus.png";
 
-import imagePlaceholder300x600 from "./assets/post/300x600.png";
-import imagePlaceholder400x400 from "./assets/post/400x400.png";
-import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+
 import huddleHomescreen from "./assets/post/huddle_homescreen.png";
 
 import insight1 from "./assets/post/insight1.png";
@@ -130,9 +128,9 @@ import routes from "./assets/post/route.png";
         src: huddleHomescreen,
     }}
     caption={
-        "The huddle page is the primary screen of the app. It houses all urgent information pertaining to your huddles"
+        "The huddle page is the primary screen of the app. It houses all urgent information pertaining to your huddles."
     }
-    width={6}
+    width={5}
     maxHeight={"400px"}
 >
 
@@ -208,11 +206,11 @@ knew lived in the same place as them.
         },
     ]}
     direction={"row"}
-    width={8}
-    maxHeight={"400px"}
+    width={7}
+    maxHeight={"300px"}
 >
 
-Our participants stated that they wanted to keep talking with their friends  
+Our participants stated that they wanted to keep talking with their friends
 while they were commuting, but found it difficult because they also had to 
 be extra aware of what was going on around them. One participant said that 
 she commonly uses FaceTime to call her friends on her commute, while 
@@ -236,26 +234,29 @@ as a result, update the route to reflect any changes from the alerts.
 
 ## Iterative Design Process and Key Insights
 
-We started off by creating our paper prototype. Since we had two
-tasks we wanted to focus on, we made sure that the functionalities
-of our app were targeted towards helping participants accomplish
-these goals. After this, we conducted heuristic evaluations to
-better understand how different participants would interact with
-our prototype. We asked two evaluators in our CSE 440 class to 
-go through our prototype and they helped us identify usability problems
-in our design. We were able to gather helpful feedback surrounding 
-Nielsen’s Heuristics. Following the heuristic evaluation, 
-we did usability testing. We asked three different students 
-if they would be willing to participate in our test. First we 
-talked to a freshman in the Nanoscience Building who generally 
-walked to all of his classes and did not spend too much time on 
-West campus. Our second participant was a senior in our CSE 440 
-section who usually walked to campus. Lastly, we talked to a sophomore 
-at the Odegaard Library who usually took the bus and walked if 
-she was running late. We were able to get very helpful feedback that 
-allowed us to refine our prototype in several ways. We proceeded to 
-complete our digital mockup by using what we learned from all our past 
-evaluations and reflections as a team using the Figma platform.
+We started off by creating our paper prototype. Since we had two tasks
+we wanted to focus on, we made sure that the functionalities of our
+app were targeted towards helping participants accomplish these goals. 
+Our first task was having individuals find a huddle (person or group) 
+to commute with. Our second task was having individuals find a safe route 
+home. After this, we conducted heuristic evaluations to better 
+understand how different participants would interact with our prototype.  
+Participants executed the previously mentioned tasks while evaluating 
+our designs during our usability tests as well. We asked two evaluators 
+in our CSE 440 class to go through our prototype and they helped us 
+identify usability problems in our design. We were able to gather 
+helpful feedback surrounding Nielsen’s Heuristics. Following the 
+heuristic evaluation, we did usability testing. We asked three different 
+students if they would be willing to participate in our test. First we 
+talked to a freshman in the Nanoscience Building who generally walked to 
+all of his classes and did not spend too much time on West campus. Our 
+second participant was a senior in our CSE 440 section who usually walked 
+to campus. Lastly, we talked to a sophomore at the Odegaard Library who 
+usually took the bus and walked if she was running late. We were able to 
+get very helpful feedback that allowed us to refine our prototype in 
+several ways. We proceeded to complete our digital mockup by using what 
+we learned from all our past evaluations and reflections as a team 
+using the Figma platform.
 
 ### Providing an Initial Tutorial 
 
@@ -273,13 +274,13 @@ evaluations and reflections as a team using the Figma platform.
 Initially our main home page had three main functionality buttons 
 but while conducting our usability test with the senior in our 
 CSE 440 section, she mentioned how she was not sure what the buttons 
-were supposed to do. Since we had to serve as “human computers” we 
-were not able to guide her. However, this shed light upon the fact 
-that we should make sure to include a clear tutorial that participants 
-are able to see upon entry onto the main page instead of seeing just 
-the buttons. We added a detailed description bubble for what each button 
-did so that participants could clearly choose one, depending on the 
-task they wanted to accomplish.
+were supposed to do. Since we had to serve as “human computers” 
+we were not able to guide her. However, this shed light upon the 
+fact that we should make sure to include a clear tutorial that 
+participants are able to see upon entry onto the main page instead 
+of seeing just the buttons. We added a detailed description bubble 
+for what each button did so that participants could clearly choose 
+one, depending on the task they wanted to accomplish.  
 
 </ProjectImageBlock>
 
@@ -296,17 +297,16 @@ task they wanted to accomplish.
     maxHeight={"400px"}
 >
 
-During our usability test with the sophomore from the Odegaard 
-library, she asked us how close her friends were to her when 
-choosing who to add to her huddle. We could not clarify this 
-during the process since we were practicing an “off-hands” 
-practice but it got us thinking about how we should solve this 
-challenge. She brought up a valid point because with our 
-prototype at the time, there was no way of knowing how close 
-or far your friends were from you. We decided to add an 
-adjustable radius for people to find other contacts that were 
-close to them to commute with. This added more clarity to the 
-process of picking individuals to commute with.
+During our usability test with the sophomore from the Odegaard library, 
+she asked us how close her friends were to her when choosing who to 
+add to her huddle. We could not clarify this during the process 
+since we were practicing an “off-hands” practice but it got us 
+thinking about how we should solve this challenge. She brought up a 
+valid point because with our prototype at the time, there was no 
+way of knowing how close or far your friends were from you. We 
+decided to add an adjustable radius for people to find other contacts 
+that were close to them to commute with. This added more clarity to 
+the process of picking individuals to commute with.
 
 </ProjectImageBlock>
 
@@ -323,17 +323,16 @@ process of picking individuals to commute with.
     maxHeight={"400px"}
 >
 
-While going through our prototype as a group, we observed 
-that there was no way to modify the request that individuals 
-would send others to create a huddle. At first, our model 
-was very rigid and individuals who received the request 
-could only accept or decline. This seemed very inflexible 
-so we modified our request page by making it more open-ended 
-to accommodate more situations. We made it a text box where 
-we prompted them with some questions that they could use to 
-send their request. We also added more cancel button and 
-back button scenarios to give the participant more 
-flexibility when creating a request.  
+While going through our prototype as a group, we observed that 
+there was no way to modify the request that individuals would 
+send others to create a huddle. At first, our model was very 
+rigid and individuals who received the request could only 
+accept or decline. This seemed very inflexible so we modified 
+our request page by making it more open-ended to accommodate 
+more situations. We made it a text box where we prompted them 
+with some questions that they could use to send their request. 
+We also added more cancel button and back button scenarios to 
+give the participant more flexibility when creating a request.   
 
 </ProjectImageBlock>
 
