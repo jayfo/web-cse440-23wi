@@ -69,6 +69,9 @@ import sketch2 from "./assets/post/sketch2.PNG";
 import task1 from "./assets/post/task1.PNG";
 import task2 from "./assets/post/task2.PNG";
 import mockupOverview from "./assets/post/mockupOverview.PNG";
+import inclusivityBefore from "./assets/post/inclusivityBefore.PNG";
+import inclusivityAfter from "./assets/post/inclusivityAfter.PNG";
+import oldNavBar from "./assets/post/oldNavBar.PNG";
 
 
 # GymStar
@@ -191,7 +194,21 @@ The first important revision was to color code the map of the floors of the gym.
 
 ### Modifying Navigation Bar
 
-<ProjectImageBlock image={{ src: newNavBar, }} caption={ "Our updated navigation bar." } width={6} maxHeight={"400px"}>
+<ProjectImagesBlock
+    images={[
+        {
+            src: oldNavBar,
+            caption: "Before"
+        },
+        {
+            src: newNavBar,
+            caption: "After"
+        },
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"400px"}
+>
 
 The second important revision we made was changing the language in the navigation bar. In our previous design, we had the home screen labeled as Gym Status. We learned this language by completing the task of, “seeing how busy a machine is,” confusing for participants. Rather than going to the map, one of the participants in our usability test went to the “Gym Status” screen to find the busyness of a machine. We combated this confusion by making the home screen titled, “Home.” This is important because allows participants to clearly achieve the task of “seeing how busy a machine is” without confusion.
 
@@ -199,8 +216,25 @@ The second important revision we made was changing the language in the navigatio
 
 ### Promoting Inclusivity
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: inclusivityBefore,
+            caption: "Before"
+        },
+        {
+            src: inclusivityAfter,
+            caption: "After"
+        },
+    ]}
+    direction={"row"}
+    width={8}
+    maxHeight={"400px"}
+>
+ 
 One revision we made to promote the inclusivity of people at various knowledge levels about the gym and their personal anatomy was the revision related to popping up an image showing muscle groups that are targeted instead of just listing them. Oftentimes, people who are attempting to gain more familiarity with muscle groups targeted by different machines might not be able to identify specific muscle groups by just their name, so having a diagram there to aid them in their learning process is essential. We had made an unintentional assumption that the people using our app would already be familiar with where specific muscle groups are located if they wanted to use a specific machine that they believed might target those muscles. 
 Another revision we made related to meeting the Web Content Accessibility Guidelines was increasing the font size of the machine status because it was too small beforehand. WCAG guidelines advise bigger text to ensure that text is not illegible. Conceptually, our design process so far has been targeted towards promoting inclusive environments at the gym so we didn't have to make many modifications about the overall design process. In future iterations, we created more distinct and contrasting color options and also turn a lot of the more wordy sections into separate sections using buttons so text-to-speech applications don’t have to read aloud everything all at once.
+
 
 ## Resulting Design
 
