@@ -240,9 +240,12 @@ The second part of this redesign was our “Easy Symptoms” page where grouping
     width={6}
     maxHeight={"400px"}
 >
-We built our initial paper prototype based on our design and research. 
-We also geared the prototype to be able to complete the two selected tasks. 
-Once we had our paper prototype, we set out to find participants to gather two heuristic evaluations as well as three usability tests. 
+**Two Selected Tasks:**
+- Task 1: Remembering to take daily medication
+- Task 2: Journaling Symptomology for medical evaluation
+We built our initial lofi prototype based on our design and research. 
+We also geared the prototype to be able to complete the two selected tasks.
+Once we had our lofi prototype, we set out to find participants to gather two heuristic evaluations as well as three usability tests. 
 We gained very insightful feedback from our participants from these tests. 
 Some of the issues in our prototype were with notifications, 
 participants pointed out that it was difficult to distinguish medicine vs symptomatology reminders. 
@@ -251,14 +254,14 @@ There was also an issue of non functionality with the settings and emergency con
 A general piece of feedback we got was participants like consistency and simplicity across screens in the app.  
 </ProjectImageBlock>
 
-We finalized our paper prototype by addressing the issues found during testing. 
+We finalized our lofi prototype by addressing the issues found during testing. 
 Some of the changes include color coding reminders to distinguish between medicine vs symptoms. 
 Another change was adding functionality for settings and emergency contacts as well as a help button for navigation. 
 We also made sure to emphasize consistency and simplicity across the screens, adding in back arrows for pages deeper in the app and help button on each appropriate page. 
 To add to the simplicity we made sure that it was easier to understand for the user to enter medication and submit symptoms.
 
 
-Based on our final paper prototype, we creating a digital mockup:
+Based on our final lofi prototype, we creating a digital mockup:
 
 **Simplifying Symptom Entry Sequence**
 
@@ -266,56 +269,61 @@ Based on our final paper prototype, we creating a digital mockup:
     image={{
         src: ins_1,
     }}
-    caption={""
+    caption={"Initial lofi prototype featuring symptom entry sequence"
     }
     width={6}
     maxHeight={"400px"}
 >
 From one of our usability tests, the participant found it difficult to submit their symptoms through the phone application. 
 The participant found the initial paper prototype design screen for submitting symptoms confusing, especially the “Load Symptom Group” button. 
-Taking into account this feedback, we simplified the screens for submitting symptoms by removing confusing buttons 
-and not having too many tabs on one screen so that the user is not confused and to keep the screen easier to navigate. 
-We made sure to separate the phone and watch app by distinguishing symptom groups (phone app) and easy suptoms (watch app).
 </ProjectImageBlock>
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: iterativeinsight1image12,
-        },
-        {
-            src: iterativeinsightone,
-        }
-    ]}
-    direction={"row"}
-    caption={""
+<ProjectImageBlock
+    image={{
+        src: iterativeinsightone,
+    }}
+    caption={"Digital mockup featuring improved and simplified symptom entry sequence"
     }
+    width={6}
     maxHeight={"400px"}
-></ProjectImagesBlock>
+>
+Taking into account this feedback, we simplified the screens for submitting symptoms by removing confusing buttons 
+and not having too many tabs on one screen so that the user is not confused and to keep the screen easier to navigate. 
+We made sure to separate the phone and watch app by distinguishing symptom groups (phone app) and easy symptoms (watch app).
+</ProjectImageBlock>
 
 **Adding important functionality of features**
 
-The usability tests revealed that the settings and emergency contact pages were non-functioning and a relevant feature as 2 of the participants tried tapping on each of the pages. 
+<ProjectImageBlock
+    image={{
+        src: iterativeinsight2image12,
+    }}
+    caption={"Initial paper prototype feature mobile app main home screen with the emergency contact icon highlighted"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+The usability tests revealed that the emergency contact page was non-functioning and a relevant feature as 2 of the participants tried tapping on this icon. 
 One participant was confused on the meaning of the emergency contact button and even asked during the test, 
 “What does this phone icon do? Does it link to your phone contacts app?”. 
-Using the feedback, we made sure to add functionality to the settings and emergency contact page so that we could increase accessibility of our product and clear up any confusion. 
-We made sure to maintain simplicity of the app and make the screens of the setting and emergency contact pages clear and easy to navigate. 
-We maintained consistency by making the emergency contact page similar to the list of medication alerts page. 
+</ProjectImageBlock>
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: iterativeinsight2image12,
-        },
-        {
-            src:  iterativeinsight2image22,
-        }
-    ]}
-    direction={"row"}
-    caption={""
+
+ 
+
+<ProjectImageBlock
+    image={{
+        src: iterativeinsight2image22,
+    }}
+    caption={"Digital mockup with the added functionality of the emergency contact screen for entering contacts"
     }
+    width={6}
     maxHeight={"400px"}
-></ProjectImagesBlock>
+>
+Using the feedback, we made sure to add functionality to the emergency contact page so that we could increase accessibility of our product and clear up any confusion. 
+We made sure to maintain simplicity of the app and make the screens of the setting and emergency contact pages clear and easy to navigate. 
+We maintained consistency by making the emergency contact page similar to the list of medication alerts page.
+</ProjectImageBlock>
 
 **Improving visibility and readability of the application**
 
@@ -323,7 +331,7 @@ We maintained consistency by making the emergency contact page similar to the li
     image={{
         src: iterativeinsight3image121,
     }}
-    caption={""
+    caption={"Initial paper prototype of mobile and watch app showing medication alerts"
     }
     width={6}
     maxHeight={"400px"}
@@ -331,10 +339,7 @@ We maintained consistency by making the emergency contact page similar to the li
 From our usability tests, a participant pointed out that it was hard to know if medicine was taking for today. 
 Our initial paper prototype indicated medicine as taken by the filled in box that corresponds to that medicine. 
 Another issue that arose was that the reminders did not give any instructions or dosage quantity when the user received the notification. 
-This was exposed in each of our usability tests as each participant pointed that out. To fix these issues, 
-we added a green checkmark to ensure there is no confusion if the medicine was taken. 
-The watch app also visibly tells the user that the medication was taken. 
-Additionally, the watch and phone reminders specify the dosage quantity to the user. 
+This was exposed in each of our usability tests as each participant pointed that out. 
 </ProjectImageBlock>
 
 <ProjectImagesBlock
@@ -349,10 +354,15 @@ Additionally, the watch and phone reminders specify the dosage quantity to the u
             src:  iterativeinsight3image221,
         }
     ]}
-    caption={""
+    caption={"Digital mockup of mobile and watch app showing improved and descriptive alerts"
     }
     maxHeight={"400px"}
-></ProjectImagesBlock>
+>
+To fix these issues, 
+we added a green checkmark to ensure there is no confusion if the medicine was taken. 
+The watch app also visibly tells the user that the medication was taken. 
+Additionally, the watch and phone reminders specify the dosage quantity to the user. 
+</ProjectImagesBlock>
 
 ### Resulting Design
 
