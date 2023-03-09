@@ -185,7 +185,7 @@ After making the necessary design modifications, we did usability tests with thr
 
 <ProjectImageBlock image={{ src: colorCodedMap, }} caption={ "Our updated color-coded map." } width={6} maxHeight={"400px"}>
 
-The first important revision was to color code the map of the floors of the gym. When looking at the map of the gym, it used to have no way to indicate the busyness of a room in the gym. By color-coading the map of the gym, the participant can see how busy the space is before they enter. We learned this was an important feature during usability testing because one of our participants said they would not enter a room in the gym if it was too busy. In our previous design, the participant would have to walk into a room to see how busy it is. We wanted to alleviate this step of having to walk into the room by color-coding the rooms in the gym by busyness. This is important because it saves the participant time and makes going to the gym a smoother experience, which is one of the main goals of our application.
+The first important revision was to color code the map of the floors of the gym. When looking at the map of the gym, it used to have no way to indicate the busyness of a room in the gym. By color-coding the map of the gym, the participant can see how busy the space is before they enter. We learned this was an important feature during usability testing because one of our participants said they would not enter a room in the gym if it was too busy. In our previous design, the participant would have to walk into a room to see how busy it is. We wanted to alleviate this step of having to walk into the room by color-coding the rooms in the gym by busyness. This is important because it saves the participant time and makes going to the gym a smoother experience, which is one of the main goals of our application.
 
 </ProjectImageBlock>
 
@@ -193,14 +193,14 @@ The first important revision was to color code the map of the floors of the gym.
 
 <ProjectImageBlock image={{ src: newNavBar, }} caption={ "Our updated navigation bar." } width={6} maxHeight={"400px"}>
 
-The second important revision we made was changing the language in the navigation bar. In our previous design, we had the home screen labeled as Gym Status. We learned this language by completing the task of, “seeing how busy a machine is,” confusing for participants. Rather than going to the map, one of the participants in our usability test went to the “Gym Status” screen to find the busyness of a machine. We are going to combat this confusion by making the home screen titled, “Home.” This is important because it will allow participants to clearly achieve the task of, “seeing how busy a machine is,” without confusion.
+The second important revision we made was changing the language in the navigation bar. In our previous design, we had the home screen labeled as Gym Status. We learned this language by completing the task of, “seeing how busy a machine is,” confusing for participants. Rather than going to the map, one of the participants in our usability test went to the “Gym Status” screen to find the busyness of a machine. We combated this confusion by making the home screen titled, “Home.” This is important because allows participants to clearly achieve the task of “seeing how busy a machine is” without confusion.
 
 </ProjectImageBlock>
 
 ### Promoting Inclusivity
 
 One revision we made to promote the inclusivity of people at various knowledge levels about the gym and their personal anatomy was the revision related to popping up an image showing muscle groups that are targeted instead of just listing them. Oftentimes, people who are attempting to gain more familiarity with muscle groups targeted by different machines might not be able to identify specific muscle groups by just their name, so having a diagram there to aid them in their learning process is essential. We had made an unintentional assumption that the people using our app would already be familiar with where specific muscle groups are located if they wanted to use a specific machine that they believed might target those muscles. 
-Another revision we made related to meeting the Web Content Accessibility Guidelines was increasing the font size of the machine status because it was too small beforehand. WCAG guidelines advise bigger text to ensure that text is not illegible. Conceptually, our design process so far has been targeted towards promoting inclusive environments at the gym so we didn't have to make many modifications about the overall design process. Some assumptions we made were related to visibility of colors to indicate the busyness of gym sections. We used green, red and yellow but the green-red spectrum is difficult for people who are colorblind to differentiate. In future iterations, we hope to create more distinct and contrasting color options and also turn a lot of the more wordy sections into separate sections using buttons so text-to-speech applications don’t have to read aloud everything all at once.
+Another revision we made related to meeting the Web Content Accessibility Guidelines was increasing the font size of the machine status because it was too small beforehand. WCAG guidelines advise bigger text to ensure that text is not illegible. Conceptually, our design process so far has been targeted towards promoting inclusive environments at the gym so we didn't have to make many modifications about the overall design process. In future iterations, we created more distinct and contrasting color options and also turn a lot of the more wordy sections into separate sections using buttons so text-to-speech applications don’t have to read aloud everything all at once.
 
 ## Resulting Design
 
@@ -224,13 +224,14 @@ In implementing the digital mockup, we made a few different design decisions dep
         src: task1,
     }}
     caption={
-        "Task 1: Participants are able to infer the status of various machines from the gym map (i.e. how busy they are and what similar machines are open that they might be able to use as an alternative)."
+        "Task 1: Participants are able to infer the status of various machines from the gym map (i.e. how busy they are and what similar machines are open that they might be able to use as an alternative). 
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Walkthrough: Participants can see the busyness of the rooms at the gym. Then they can click a room to see the busyness of each machine, once they click a machine, they can see the status of it clearly marked above the image of the machine. In addition, participants could alternatively diverge from the map path to complete the task and click the My Workouts button to show the participant’s workouts and their status for that exercise and machine that is involved. 
+Walkthrough: Participants can click on a section of the map that represents a specific floor (Floor One in diagram) and access the map of a specific room they are hoping to visit (The Floor One Toning Room shown in the diagram). They can access a legend helping them determine how busy specific machines are even find alternatives on the "More Information on Status" page if they find the machine they're looking for is too busy. The "My Workouts" section helps them keep track of their typical workout machines and their availability.
+                      
 
 </ProjectImageBlock>
 
