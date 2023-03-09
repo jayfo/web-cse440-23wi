@@ -65,11 +65,12 @@ import FigmaOverview from "./assets/post/FigmaOverview.jpg"
 import SplashPage from "./assets/post/SplashPage.jpg"
 import PaperPrototypeOverview from "./assets/post/PaperPrototypeOverview.jpg"
 
-import Navigation from "./assets/post/navigation.jpg"
-import Popups from "./assets/post/popups.jpg"
+import NavigationBefore from "./assets/post/navigation_before.jpg"
+import NavigationAfter from "./assets/post/navigation_after.jpg"
 import PopupsBefore from "./assets/post/popups_before.jpg"
 import PopupsAfter from "./assets/post/popups_after.jpg"
-import Skipquestions from "./assets/post/skipquestions.jpg"
+import SkipquestionsBefore from "./assets/post/skipquestions_before.jpg"
+import SkipquestionsAfter from "./assets/post/skipquestions_after.jpg"
 
 
 import Task11 from "./assets/post/Task1/task1-1.jpg"
@@ -253,17 +254,21 @@ prototypes included explicit closeouts such as "x" icons in corners and buttons 
 
 ### Including Option to Skip Questions
 
-<ProjectImageBlock
-    image={{
-        src: Skipquestions,
-    }}
-    caption={
-        "Skip Questions Insight."
-    }
-    width={8}
+<ProjectImagesBlock
+    images={[
+        {
+            src: SkipquestionsBefore,
+            caption: "Original Question Skipping Design",
+        },
+        {
+            src: SkipquestionsAfter,
+            caption: "Revised Question Skipping Design",
+        }
+    ]}
+    direction={"row"}
+    width={8.5}
     maxHeight={"400px"}
 >
-
 Our initial design required the user to complete every question on placement tests, otherwise they would
 be met with an "Unanswered Questions" error dialog. Through usability tests, we realized that not allowing
 users to skip questions doesn't allow for the case where the user genuinely doesn't know the answer and
@@ -271,18 +276,23 @@ would rather not answer the particular question. We replaced this with a dialog 
 there exist unanswered questions upon attempting to submit the quiz and gives options to "Cancel" submitting or
 to confirm submitting.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Clearer Navigation
 
-<ProjectImageBlock
-    image={{
-        src: Navigation,
-    }}
-    caption={
-        "Clearer Navigation Insight."
-    }
-    width={8}
+<ProjectImagesBlock
+    images={[
+        {
+            src: NavigationBefore,
+            caption: "Original Navigation Design",
+        },
+        {
+            src: NavigationAfter,
+            caption: "Revised Navigation Design",
+        }
+    ]}
+    direction={"row"}
+    width={5}
     maxHeight={"400px"}
 >
 
@@ -292,7 +302,7 @@ the placemnet test itself. We kept this in mind as we redesigned the onboarding 
 placement test, to have a more linear progression of views and to not show the navigation bar so that the 
 user's workflow is in a more logical, defined ordering.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ## Resulting Design
 
