@@ -52,36 +52,56 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
   *   - Be sure all images are the same height.
 */}
 
-import imageTeamPerson1 from "./assets/team/firstname1.png";
-import imageTeamPerson2 from "./assets/team/firstname2.png";
-import imageTeamPerson3 from "./assets/team/firstname3.png";
-import imageTeamPerson4 from "./assets/team/firstname4.png";
+import imageTeamPerson1 from "./assets/team/adam.png";
+import imageTeamPerson2 from "./assets/team/nile.jpg";
+import imageTeamPerson3 from "./assets/team/nancy.png";
+import imageTeamPerson4 from "./assets/team/kelvin.jpg";
 
-import imagePlaceholder300x600 from "./assets/post/300x600.png";
-import imagePlaceholder400x400 from "./assets/post/400x400.png";
-import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
+import FigmaOverview from "./assets/post/FigmaOverview.jpg"
+import SplashPage from "./assets/post/SplashPage.jpg"
+import PaperPrototypeOverview from "./assets/post/PaperPrototypeOverview.jpg"
 
-# Title
+import NavigationBefore from "./assets/post/navigation_before.jpg"
+import NavigationAfter from "./assets/post/navigation_after.jpg"
+import PopupsBefore from "./assets/post/popups_before.jpg"
+import PopupsAfter from "./assets/post/popups_after.jpg"
+import SkipquestionsBefore from "./assets/post/skipquestions_before.jpg"
+import SkipquestionsAfter from "./assets/post/skipquestions_after.jpg"
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+
+import Task11 from "./assets/post/Task1/task1-1.jpg"
+import Task12 from "./assets/post/Task1/task1-2.jpg"
+import Task13 from "./assets/post/Task1/task1-3.jpg"
+import Task14 from "./assets/post/Task1/task1-4.jpg"
+import Task15 from "./assets/post/Task1/task1-5.jpg"
+import Task16 from "./assets/post/Task1/task1-6.jpg"
+
+import Task21 from "./assets/post/Task2/task2-1.jpg"
+import Task22 from "./assets/post/Task2/task2-2.jpg"
+import Task23 from "./assets/post/Task2/task2-3.jpg"
+import Task24 from "./assets/post/Task2/task2-4.jpg"
+
+# Lingual
+
+<ProjectSubtitle>A new way to learn languages</ProjectSubtitle>
 
 ## Team
 
 <TeamMemberGallery members={[
     {
-        name: "Team Person 1",
+        name: "Adam Wang",
         photo: imageTeamPerson1,
     },
     {
-        name: "Team Person 2",
+        name: "Nile Camai",
         photo: imageTeamPerson2,
     },
     {
-        name: "Team Person 3",
+        name: "Nancy Wu",
         photo: imageTeamPerson3,
     },
     {
-        name: "Team Person 4",
+        name: "Kelvin Ng",
         photo: imageTeamPerson4,
     },
 ]} />
@@ -101,260 +121,306 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: SplashPage,
+        caption: "Lingual Launch Page"
     }}
-    caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
-    }
-    width={6}
-    maxHeight={"400px"}
+    width={5}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+Roughly only 20% of Americans know more than one language. One of the reasons this 
+number is so low is because learning a new language is often repetitive, tedious,
+and boring. How do we solve this issue? Shockingly, the average American watches 
+roughly three hours of television a day, so what if they spent part of this time 
+learning a new langauge by watching something in the foreign language?
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+This is what Lingual aims to do: help users learn a new language through watching
+TV shows, movies, or reading books. With the Lingual app, a user can select the 
+desired language to be learned and get curated recommendations based on their 
+proficiency levels. They are also able to connect and converse with other users
+who are learning the same language and watching the same content, allowing the
+users to improve their conversational fluency as well. 
 
 </ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+To address our problem, we decided to gage any shortcomings in current language 
+learning methods (such as the classroom and current language learning applications)
+and evaluate interest in engaging supplements like entertainment. We then chose to
+conduct three semi-structured interviews to gather these insights because interviews
+provided direct audience interaction allowing us to pry into particular shortcomings
+and any supplement preferences. We wanted available interview participants with current
+or previous language experience so interviewed two current University of Washington
+language students (Jane and Howard) and a user of Duolingo (Nicole).
 
-### Title for an Insight
+Our interview questions started out with broad questions about their language background.
+From there we asked the following questions involving their classroom experience/platform.
+- How they felt about certain aspects of their current language learning system
+- How they engaged in the non-primary language outside of a classroom environment, if at all
+- How proficient they were in different aspects of the language (writing, speaking, reading, etc.)
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
+### Key Insights
+#### Existing Language Learning Structures focus on grammar and vocabulary more than speaking and listening
+Classrooms have occasional speaking and listening exercises, but the grammar and vocabulary is often
+the focus and the bulk of coursework. Duolingo has a similar pattern as the majority of the exercises
+are reading/matching and users may even skip speaking/listening exercises. This tends to present a steep
+learning curve for new learners with regards to becoming conversationally fluent. Lingual is designed to focus 
+more on the speaking, listening, and comphrension aspects of learning the language, helping users bridge the 
+gap of knowing the vocabulary but not being conversationally fluent. 
 
-### Title for an Insight
+#### Existing Language Learning Structures occasionally feel like a chore and ineffective 
+While a user may practice everyday, they may not learn much because they only spend 5-10 minutes each day.
+Many apps have some sort of reward system or “tokens” that gamify language learning. 
+To some extent this shifts the focus of the app to collect these rewards rather than learning the language.
+While this is meant to increase the amount of time the user spends on the app learning the language, some
+users simply start doing the bare minimum to achieve these "tokens" but nothing more. Lingual is designed to 
+have the attraction aspect of the gamification by having a Lingual Score that represents a users fluency.
+However, this Lingual Score is primarily for self tracking a users progress and cosmetics, which removes the
+distractions of "rewards" or "spending tokens" that other gamified language learning platforms have.
+
+#### There is wide interest in engaging with foreign media
+While there is interest in engaging in foreign media, for example foreign shows or novels, there is a very large
+barrier for people to understand the content. Many of the foreign media content is targeted towards those who are 
+proficient or fluent in that language, making it hard for beginning language learners to follow along. Lingual aims
+to address this challenge by generating media recommendations right at the users level (or slightly more advanced so 
+the user challenges themselves). To do this, Lingual has to measure the users current proficiency and monitor how it 
+increases as the user learns more of the language. Lingaual achieves this by having the user take a placement quiz to 
+assess their inital proficiency, and the user takes check-in quizzes throughout their media engagement so Lingual can 
+update its recommendations to the user.
+
+
+## Iterative Design Process and Key Insights
+### Reaching a Paper Prototype
+We began by making many prospective design sketches and storyboards before we narrowed to making a
+mobile application focusing on two tasks: Finding media content at the appropriate difficulty level
+and finding a community/conversational partner. We then made a paper prototype for the mobile 
+application that we took into testing iterations.
+
+<ProjectImageBlock
+    image={{
+        src: PaperPrototypeOverview,
+        caption: "Paper Prototype Overview"
+    }}
+    width={20}
+></ProjectImageBlock>
+
+
+### Testing Process
+We iterated on our prototype through two heuristic evaluations based on Nielson’s 10 Usability
+Heuristics and three usability tests. Our heuristic evaluations were done during CSE440 lecture and
+allowed for numerous text and button fixes. For our usability tests, our first participant was a
+Duolingo user and took place in their apartment. We chose this person and environment because
+they're a part of our target audience and the environment emulates where they'd typically be using
+the Lingual app. After conducting this test, we refined our background introduction and tasks to
+become much clearer.
+
+Our second participant was a student and took place in Mary Gates Hall. We selected this individual
+because they were in our quiz section and they had interest in learning a language. Their advice
+provided many specific visual improvements.
+
+Our last participant was a previous language student and took place in CSE2. We chose this person
+because they had expressed interest in more entertaining language supplements. They helped to clarify
+that the design was clear but also pointed out issues with our placement test process.
+
+### Making Pop-Ups More User Friendly
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
+            src: PopupsBefore,
+            caption: "Original Pop-up Design",
         },
         {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
-        },
+            src: PopupsAfter,
+            caption: "Revised Pop-up Design",
+        }
     ]}
     direction={"row"}
     width={8}
     maxHeight={"400px"}
 >
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
+In many of our usability tests, we had confusion from participants over how to respond to pop-ups in
+our design. Many of the pop-ups didn't include any indication of how to dismiss them in the case of 
+displaying the Lingual score or to remedy an error in the case of leaving questions unanswered in the
+placement test. In order to improve the heuristic of User Control and Freedom, subsequent paper 
+prototypes included explicit closeouts such as "x" icons in corners and buttons in certain pop-up dialogs.
 
 </ProjectImagesBlock>
 
-### Title for an Insight
+### Including Option to Skip Questions
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+<ProjectImagesBlock
+    images={[
+        {
+            src: SkipquestionsBefore,
+            caption: "Original Question Skipping Design",
+        },
+        {
+            src: SkipquestionsAfter,
+            caption: "Revised Question Skipping Design",
+        }
+    ]}
+    direction={"row"}
+    width={8.5}
+    maxHeight={"400px"}
+>
+Our initial design required the user to complete every question on placement tests, otherwise they would
+be met with an "Unanswered Questions" error dialog. Through usability tests, we realized that not allowing
+users to skip questions doesn't allow for the case where the user genuinely doesn't know the answer and
+would rather not answer the particular question. We replaced this with a dialog that informs the user that
+there exist unanswered questions upon attempting to submit the quiz and gives options to "Cancel" submitting or
+to confirm submitting.
 
-## Iterative Design Process and Key Insights
+</ProjectImagesBlock>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
+### Clearer Navigation
 
-### Title for an Insight
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: NavigationBefore,
+            caption: "Original Navigation Design",
+        },
+        {
+            src: NavigationAfter,
+            caption: "Revised Navigation Design",
+        }
+    ]}
+    direction={"row"}
+    width={5}
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+With our design for one of our tasks requiring the user to complete certain actions before proceeding to
+the rest of the app, we noticed that the app's navigation bar shouldn't appear in certain places, such as during
+the placemnet test itself. We kept this in mind as we redesigned the onboarding process, including taking the
+placement test, to have a more linear progression of views and to not show the navigation bar so that the 
+user's workflow is in a more logical, defined ordering.
 
-</ProjectImageBlock>
-
-### Title for an Insight
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
-
-</ProjectImageBlock>
-
-### Title for an Insight
-
-<ProjectImageBlock
-    image={{
-        src: imagePlaceholder1200x800,
-    }}
-    caption={
-        "This is a caption."
-    }
-    width={6}
-    maxHeight={"400px"}
->
-
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
-
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ## Resulting Design
 
+Our resulting design supports two main tasks: Allowing users to discover media content in a foreign 
+language that fits their language comprehension ability, and helping users find a community/a conversational partner for the language being learned.
+<ProjectImageBlock
+    image={{
+        src: FigmaOverview,
+    }}
+    caption={
+        "Final Design Figma Overview."
+    }
+    width={20}
+>
+</ProjectImageBlock>
+
+### Task 1: Discover media content in a foreign language that fits one's language comprehension ability
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: Task11,
+            caption: "Language Selection",
         },
         {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
+            src: Task12,
+            caption: "Genre Selection",
+        }
     ]}
     direction={"row"}
-    caption={
-        "This caption for the entire block will span the set of images."
-    }
     width={8}
-    maxHeight={"400px"}
 >
-
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
-
+Once the user creates an account, they are prompted to select which languages they would 
+like to learn and which genres of media they enjoy consuming. 
+For this example, the user chooses Spanish and that they enjoy comedy.
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
+            src: Task13,
+            caption: "Baseline Proficiency Quiz",
         },
         {
-            src: imagePlaceholder300x600,
-        },
+            src: Task14,
+            caption: "Initial Lingual Score",
+
+        }
     ]}
     direction={"row"}
-    caption={
-        "This caption for the entire block will span the set of images."
-    }
     width={8}
-    maxHeight={"400px"}
 >
+The user then proceeds to take a placement quiz for the languages the selected. 
+This quiz is meant to measure their baseline proficiency and is used to generate inital media recommentations. 
+They recieve a Lingual Score that represents their relative proficiency in that language. 
+The user can increase their Lingual Score by completing check-in quizzes about a show or movie they are watching.   
+</ProjectImagesBlock>
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+<ProjectImagesBlock
+    images={[
+        {
+            src: Task15,
+            caption: "Media recommendations",
 
+        },
+        {
+            src: Task16,
+            caption: "Media thumbnail with information",
+
+        }
+    ]}
+    direction={"row"}
+    width={8}
+>
+After completing the baseline proficiency quiz and recieving their Lingual Score, they are brought to the Discover page, 
+where they can browse curated shows, movies, and books are recommended to them. 
+These recommendations are based off of their input favored genres and their current proficiency. 
+They can engage with the media by clicking on each thumbnail.
+
+</ProjectImagesBlock>
+
+
+
+### Task 2: Find a community/a conversational partner for a language being learned
+
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: Task21,
+            caption: "Conversations Page",
+        },
+        {
+            src: Task22,
+            caption: "Adding a new conversation",
+        }
+    ]}
+    direction={"row"}
+    width={8}
+>
+On the Conversations page in the app, the user can toggle between their individual chats or their group chats. 
+The user can also search for specific individuals or groups they are in. 
+To join a new group or start chatting with a new individual, the user presses the plus button on the top right of the screen.
+They are then presented with the option to join a group or converse with an individual.
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: Task23,
+            caption: "Finding new group",
+        },
+        {
+            src: Task24,
+            caption: "New conversation group",
+        }
+    ]}
+    direction={"row"}
+    width={8}
+>
+For this example, the user wants to join a new group to discuss the current show they are watching.
+Based on the show or novel that the user is currently watching, the app will recommend groups that are in
+roughly the same spot as the user. The user is then able to join the group to practice
+their conversational skills and discuss the content of the show or novel.
 </ProjectImagesBlock>

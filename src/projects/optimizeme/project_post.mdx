@@ -52,36 +52,51 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
   *   - Be sure all images are the same height.
 */}
 
-import imageTeamPerson1 from "./assets/team/firstname1.png";
-import imageTeamPerson2 from "./assets/team/firstname2.png";
-import imageTeamPerson3 from "./assets/team/firstname3.png";
-import imageTeamPerson4 from "./assets/team/firstname4.png";
+import imageTeamPerson1 from "./assets/team/Vidhi.png";
+import imageTeamPerson2 from "./assets/team/Hamreet.jpg";
+import imageTeamPerson3 from "./assets/team/Sam.JPG";
+import imageTeamPerson4 from "./assets/team/JackHeadShot.jpg";
 
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
-# Title
+import paperPrototype from "./assets/post/PaperPrototype.png";
+import beforeAfter from "./assets/post/beforeAfter.png";
+import tutorial from "./assets/post/tutorial.png";
+import beforeAfter2 from "./assets/post/beforeAfter2.png";
+import yourChat from "./assets/post/yourChat.png";
+import yourChat2 from "./assets/post/yourChat2.png";
+import homePage from "./assets/post/homePage.png";
+import inputData from "./assets/post/inputData.png";
+import inputDataHome from "./assets/post/inputDataHome.png";
+import productivityInput from "./assets/post/productivityInput.png";
+import analyticsHome from "./assets/post/analyticsHome.png";
+import dataView from "./assets/post/dataView.png";
+import logo from "./assets/post/logo.png";
+import analyticsHomeIphone from "./assets/post/analyticsHomeIphone.png";
 
-<ProjectSubtitle>Optional Subtitle</ProjectSubtitle>
+# OptimizeMe
+
+<ProjectSubtitle>Get more out of your data to boost your productivity</ProjectSubtitle>
 
 ## Team
 
 <TeamMemberGallery members={[
     {
-        name: "Team Person 1",
+        name: "Vidhi Jain",
         photo: imageTeamPerson1,
     },
     {
-        name: "Team Person 2",
+        name: "Hamreet Kaur",
         photo: imageTeamPerson2,
     },
     {
-        name: "Team Person 3",
+        name: "Samudra Mowar",
         photo: imageTeamPerson3,
     },
     {
-        name: "Team Person 4",
+        name: "Jack Nussbaum",
         photo: imageTeamPerson4,
     },
 ]} />
@@ -101,260 +116,256 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: analyticsHomeIphone,
     }}
     caption={
-        "This is an image block with a caption. " +
-        "Although the raw image is 1200x800, the maxHeight property controls its rendered height. " +
-        "If not specified, the default maxHeight is \"400px\"."
+        "The Analytics tab  showcases the AI chat feature and data history along with quick facts based on the noticed trends"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Nunc sed id semper risus in
-hendrerit. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-dictum. Integer feugiat scelerisque varius morbi enim nunc faucibus. Risus at
-ultrices mi tempus imperdiet nulla malesuada pellentesque. Habitant morbi
-tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio
-tempor orci. Nisl nisi scelerisque eu ultrices vitae. In egestas erat imperdiet
-sed. Faucibus purus in massa tempor. Ipsum faucibus vitae aliquet nec.
+Many would agree that feeling unproductive, slow, and inefficient leaves people regretful of their day or even a week. Hoping to improve this in a sustainable manner while balancing work, physical and mental health is difficult. There is a huge availability of tracked health data. According to a survey by Gallup, roughly half of American adults have tracked at least one health related metric using an application or smartwatch. However, it is challenging to exactly identify the categories of wellness contributing to or detracting from productivity levels. What are ways to make health data more actionable and meaningful to users? 
 
-Ullamcorper sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a
-scelerisque purus. Tellus cras adipiscing enim eu turpis egestas pretium aenean
-pharetra. Enim sed faucibus turpis in eu mi bibendum neque egestas. Faucibus
-scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam.
-Natoque penatibus et magnis dis. Ullamcorper velit sed ullamcorper morbi
-tincidunt. Arcu dui vivamus arcu felis bibendum ut tristique. Consectetur
-adipiscing elit pellentesque habitant morbi.
+To address this issue, OptimizeMe is a mobile application focused on using the intersection of a range of tracked metrics, such as sleep, exercise, diet, and stress levels to optimize an individual's productivity. OptimizeMe aims to surface correlations/trends between empirical data and subjective participant feedback, based on a personalized definition of productivity. Our design focuses on making data more actionable through the chat feature which provides personalized advice on how to improve individual metrics based on the participant’s goals and trends. OptimizeMe is looking to do more with commonly collected data, making it more actionable and meaningful to participants.
 
 </ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut. Ac
-odio tempor orci dapibus ultrices. Nunc sed augue lacus viverra vitae congue.
-Scelerisque in dictum non consectetur a erat nam at lectus. Tincidunt arcu non
-sodales neque. Diam sit amet nisl suscipit adipiscing bibendum est ultricies.
-Morbi tincidunt augue interdum velit euismod in pellentesque massa. Libero
-justo laoreet sit amet cursus sit. At imperdiet dui accumsan sit. Sed odio
-morbi quis commodo odio aenean. Nibh tortor id aliquet lectus proin nibh.
+The motivation and goal behind our design research process was to gain a deeper understanding of participants’ current system and relationship with optimizing personal productivity. The goal was to dive into the schedule of participant’s daily routines and habits which affect their productivity. This would later help us create tasks which fit the needs of participants so that they are hopefully able to set themselves up to increase productivity. Our participants in our design research process were a mix of college students and new college graduates which provided a diverse sample size that included strenuous schedules and juggling many aspects of their lives. In total we had three participants – a third-year full-time computer science and mathematics student who works hard and is moderately active, a fourth-year undergrad student at the University of Washington studying communications extremely passionate about staying physically fit, and lastly a product manager at Google living in New York City. We chose a diverse range of participants to understand how daily productivity levels are influenced by various factors related to an individual’s physical and mental well-being. The method we decided which would be most effective was conducting semi-structured interviews with our participants so that they felt comfortable and opened up about their daily routines and habits. Also the semi-structured interview type would create space to gain a holistic view on how a participant interacts with and thinks about balancing and tracking their health-related metrics. In our semi-structured interview we asked questions around the topics of personal experiences with other applications/wearables to track data, their current productivity system and what they like and dislike, and how they identify trends and map data to actionable insights.
 
-### Title for an Insight
 
-Mattis rhoncus urna neque viverra justo nec ultrices. Amet facilisis magna
-etiam tempor orci eu lobortis elementum nibh. Quam vulputate dignissim
-suspendisse in est ante in nibh. Eget duis at tellus at urna condimentum mattis
-pellentesque. Varius sit amet mattis vulputate enim nulla. Ridiculus mus mauris
-vitae ultricies. Feugiat scelerisque varius morbi enim. Lobortis elementum nibh
-tellus molestie. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.
-Nulla posuere sollicitudin aliquam ultrices sagittis. Urna nunc id cursus metus
-aliquam eleifend mi in. Condimentum vitae sapien pellentesque habitant morbi.
-Convallis tellus id interdum velit laoreet id donec ultrices. Platea dictumst
-quisque sagittis purus. Mattis vulputate enim nulla aliquet porttitor lacus
-luctus accumsan. Mi eget mauris pharetra et ultrices neque ornare. Id volutpat
-lacus laoreet non curabitur gravida arcu ac tortor. Consectetur libero id
-faucibus nisl tincidunt.
+### Tracking Important Health Metrics
 
-### Title for an Insight
+Initially our idea and design was focused on tracking sleep data to improve a participant’s productivity the next day since it is one of the most vital human factors to an energized day. Yet the design research process uncovered a more complex system of factors that affected an individual’s productivity. A common theme that each participant conveyed is that they all found a combination of sleep, exercise, diet, and stress levels to be important in sustaining a productive day and whenever one or a combination of these fell apart, they decreased in efficiency. One participant summed it up best, “just eating healthy did not boost my energy but I had to incorporate exercise as well which became a domino effect to getting better sleep”. From this important feedback we iterated around increasing our metrics from just sleep to designing around sleep, exercise, diet, and stress levels that covers a larger area in helping participants increase their productivity. The alternatives to our design included many more factors, greater than 7, but decided this would be too much to track and not optimally helpful.
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
-        },
-        {
-            src: imagePlaceholder400x400,
-            caption: "Optional caption for just this image. It will stay with and underneath this image.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
+### Defining Productivity
 
-Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Dui ut ornare
-lectus sit amet est placerat in egestas. Sed cras ornare arcu dui vivamus.
-Scelerisque eu ultrices vitae auctor eu augue. Hac habitasse platea dictumst
-vestibulum rhoncus. Risus at ultrices mi tempus imperdiet nulla malesuada
-pellentesque elit. Sagittis vitae et leo duis ut diam quam nulla porttitor.
-Quam lacus suspendisse faucibus interdum posuere lorem. Tortor dignissim
-convallis aenean et tortor at. Elit scelerisque mauris pellentesque pulvinar
-pellentesque habitant morbi tristique senectus. Risus feugiat in ante metus.
 
-</ProjectImagesBlock>
 
-### Title for an Insight
+The most difficult part of our project was being able to define productivity. Productivity is very closely connected to an individual’s beliefs and values. At first we thought of leaving it out, so that just the data itself can be interpreted by itself. But during our ideation process and design research process we found that increasing productivity in a sustainable and engaging manner requires us to define productivity. After our semi-structured interviews we found an interesting revelation that the only common theme about defining productivity was that there was nothing in common between each participant, thus defining productivity as self defined which became one of our core tasks. The underlying relationship between increasing productivity and self definition was energy levels and so if the health metrics were strong then a higher energy level would result in a productive day. This is mapped into our product through a subject participant input task via a personalized AI chat and self tracking a new metric which is overall productivity.
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+
+
+### Converting Data to Action
+
+Displaying data alone does not increase productivity. Initially we had a simple vision in mind to present data for important health metrics so that participants could identify hidden trends in a longer time frame. But there was a disconnect between this initial framework and our goal to increase productivity. It went halfway as through our design research process, participants in interviews voiced their frustration with not being able to actually see improvement in using existing applications/wearables in this space since it just presented data. There was nothing actionable about the data. Participants described using these applications for a short amount of time in a burst, leaving them confused with a lot of data to understand. They cite that sleep data alone did not change their sleep habits. This crucial feedback led our team to try to cross the other half and connect health metrics data with actionable tasks in which the participant can genuinely improve their productivity and reach their goals. It led to the creation of subjective data input and output so that it kept participants engaged and helped guide them to actionable tasks to improve their metrics and productivity. The personalized AI chat feature allowed an interactive way to understand data and interpret the data to suggest actionable improvement based on the correlations within the individual metrics.
 
 ## Iterative Design Process and Key Insights
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh
-venenatis. Nisl vel pretium lectus quam. Volutpat blandit aliquam etiam erat
-velit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Habitant morbi
-tristique senectus et netus et malesuada fames ac. A arcu cursus vitae congue
-mauris rhoncus aenean. Ornare massa eget egestas purus. Luctus venenatis lectus
-magna fringilla. Leo integer malesuada nunc vel. Egestas purus viverra accumsan
-in nisl nisi. Risus at ultrices mi tempus imperdiet.
-
-### Title for an Insight
-
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: paperPrototype,
     }}
     caption={
-        "This is a caption."
+        "Overview of our final paper prototype"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Quis eleifend quam adipiscing vitae. Justo nec ultrices dui sapien eget mi.
-Viverra maecenas accumsan lacus vel facilisis volutpat. Dignissim suspendisse
-in est ante in nibh mauris. Vitae ultricies leo integer malesuada. Ultrices mi
-tempus imperdiet nulla. Erat velit scelerisque in dictum. Elit ut aliquam purus
-sit amet luctus. Congue quisque egestas diam in arcu cursus euismod. Proin nibh
-nisl condimentum id venenatis a condimentum. Nisl nunc mi ipsum faucibus vitae.
-Ac tortor dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-convallis a cras semper. Sed risus ultricies tristique nulla aliquet enim
-tortor at auctor. Sed felis eget velit aliquet sagittis id consectetur purus
-ut. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Aliquet lectus
-proin nibh nisl condimentum id. Ornare aenean euismod elementum nisi quis
-eleifend quam adipiscing vitae. Parturient montes nascetur ridiculus mus mauris
-vitae ultricies. Id velit ut tortor pretium viverra suspendisse.
+Our main focus during the iterative design process was on conducting usability testing and heuristic evaluations, which allowed us to detect any usability issues that participants encountered while interacting with our paper prototypes. By obtaining valuable insights into their preferences and requirements, and collecting feedback on the overall participant experience, we proposed improvements that aimed to enhance their experience with OptimizeMe. We conducted usability testing with three participants, with particular emphasis on observing how they inputted their goals for metrics, qualitative and subjective data, and how they received analytics for each metric. We continued to iterate on the paper prototypes, incorporating adjustments, until we had developed a solid prototype that we transformed into our digital mockup. With this foundation, we were able to expand on certain features in the digital mockup to better understand the overall functionality of OptimizeMe.
+</ProjectImageBlock>
+
+### Improving the Analytics
+
+<ProjectImageBlock
+    image={{
+        src: beforeAfter,
+    }}
+    caption={
+        "Before and after changes in the Analytics tab"
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
+During our usability testing, we identified an area that required improvement, specifically the analytics functionality for each metric. In our initial testing, we noticed that participants were inputting subjective data that wasn't being utilized, which limited their ability to analyze trends in-depth. At this stage, participants could only view a weekly visual graphics presentation of the scores they inputted for different metrics. However, based on feedback from participants, it was apparent that they struggled to comprehend their data. To enhance the analytics component of the application, we added the option to interact with an AI chat and see the weekly visual presentation of the graphs within the analytics tab. We integrated these changes into our paper prototypes, but during the mockup phase, we conducted a more thorough examination of the chatbot feature to comprehend its operational process. We aimed to create an intuitive feature that would allow participants to converse with the chatbot and gain insights into their personal data and trends.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Guiding Participant Through the Application
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: tutorial,
     }}
     caption={
-        "This is a caption."
+        "Digital mockup of the tutorial screens"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Feugiat vivamus at augue eget arcu. Bibendum est ultricies integer quis auctor
-elit sed vulputate mi. At tempor commodo ullamcorper a lacus vestibulum sed.
-Vitae aliquet nec ullamcorper sit amet risus. Morbi non arcu risus quis varius
-quam quisque id diam. Nulla pellentesque dignissim enim sit amet venenatis.
-Morbi tristique senectus et netus et malesuada fames ac turpis. Molestie a
-iaculis at erat pellentesque adipiscing commodo elit at. Ut eu sem integer
-vitae justo eget magna. Etiam non quam lacus suspendisse faucibus. Nulla
-aliquet enim tortor at auctor urna nunc id. Lobortis elementum nibh tellus
-molestie. Mauris in aliquam sem fringilla ut morbi tincidunt. In nisl nisi
-scelerisque eu ultrices vitae auctor.
+During our third usability test, we observed that participants were still getting confused about where to start in the application. Some of them asked questions like "how will the data be used to provide feedback?" This confusion stemmed from the fact that our initial paper prototype did not provide sufficient guidance on the different features and how they worked together. After receiving this feedback, we made a quick change to our final paper prototype to improve the participant experience. However, during the digital mockup phase, we delved deeper into the breakdown of the tutorial feature to ensure that it provided a clear and concise explanation of the application's features and how they operated. We aimed to create an intuitive tutorial that would enable participants  to have a better understanding of the application's features and how they relate to each other.
 
 </ProjectImageBlock>
 
-### Title for an Insight
+### Implementing Guided Prompts
 
 <ProjectImageBlock
     image={{
-        src: imagePlaceholder1200x800,
+        src: beforeAfter2,
     }}
     caption={
-        "This is a caption."
+        "Guided prompts for sleep metric (Inputting subjective data)"
     }
     width={6}
     maxHeight={"400px"}
 >
 
-Leo duis ut diam quam. Sit amet volutpat consequat mauris nunc congue nisi. Id
-eu nisl nunc mi ipsum. Rhoncus aenean vel elit scelerisque mauris pellentesque
-pulvinar pellentesque habitant. Duis ut diam quam nulla porttitor massa id.
-Facilisis volutpat est velit egestas. Nulla facilisi cras fermentum odio eu
-feugiat pretium. Lectus magna fringilla urna porttitor rhoncus dolor. Mollis
-nunc sed id semper risus in. Quis imperdiet massa tincidunt nunc. Sed
-adipiscing diam donec adipiscing.
+During our heuristic evaluations, we identified an issue with the absence of guide questions for participants when they clicked on a metric to enter subjective data in the text box on the home page. The evaluators questioned, "how does the participant know what to input in these text boxes?" We recognized that the lack of guidance could lead to open-ended responses and potential errors. To remedy this, we incorporated a question prompt at the top of the text box, asking participants questions like "How was your sleep?" This prompt aimed to guide participants and keep them focused on the main purpose of the app. We included this change in our paper prototype before conducting usability testing and observed that the prompt questions helped participants stay focused on the specific metric data they were inputting. 
 
 </ProjectImageBlock>
 
 ## Resulting Design
 
+The application’s final design included the following key features: 
+- Participants’ can input individual subjective and quantitative data
+- Participants' can set personally defined goals through the chat feature
+- Participants’ can view data and receive personalized advice and analytics
+- Participants’ can interact with a AI chat that is in tune with their personalized data and goals
+
+Our two primary tasks are as follows:
+
+### Task 1: Inputting Data And Goals
+
+
+After completing the initial tutorial, the user will be introduced to the OptimizeMe proprietary AI. This is where the app begins to understand the personal goals and intentions of individual participants. These screens (right) show how an introductory interaction with the AI would look:
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
+            src: yourChat,
+        }
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        ""
     }
-    width={8}
+    width={12}
     maxHeight={"400px"}
 >
-
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Risus quis varius quam
-quisque. Mi tempus imperdiet nulla malesuada pellentesque elit. Felis eget
-velit aliquet sagittis id consectetur purus ut. Eu augue ut lectus arcu.
-Maecenas ultricies mi eget mauris. Nec ullamcorper sit amet risus nullam eget
-felis eget nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Fames ac
-turpis egestas integer. Auctor augue mauris augue neque gravida. Facilisis
-magna etiam tempor orci eu lobortis. Nibh cras pulvinar mattis nunc sed blandit
-libero volutpat. Elit scelerisque mauris pellentesque pulvinar pellentesque.
-Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Sed
-odio morbi quis commodo odio aenean. In fermentum posuere urna nec tincidunt
-praesent semper feugiat. Accumsan sit amet nulla facilisi morbi. Arcu bibendum
-at varius vel pharetra vel turpis. At auctor urna nunc id. Lorem ipsum dolor
-sit amet consectetur adipiscing elit ut aliquam.
-
 </ProjectImagesBlock>
 
+After interacting with the AI to establish some goals for the participant, they will be redirected to the home page of the app:
+
 <ProjectImagesBlock
     images={[
         {
-            src: imagePlaceholder300x600,
-        },
-        {
-            src: imagePlaceholder300x600,
-        },
+            src: homePage,
+        }
     ]}
     direction={"row"}
     caption={
-        "This caption for the entire block will span the set of images."
+        ""
     }
-    width={8}
+    width={12}
     maxHeight={"400px"}
 >
+</ProjectImagesBlock>
 
-A pellentesque sit amet porttitor eget dolor morbi non arcu. Mus mauris vitae
-ultricies leo. Auctor neque vitae tempus quam. Id semper risus in hendrerit
-gravida rutrum quisque. Nibh sed pulvinar proin gravida hendrerit. Sed euismod
-nisi porta lorem mollis aliquam ut porttitor leo. Elit eget gravida cum sociis
-natoque penatibus et. Id diam vel quam elementum pulvinar. Morbi non arcu risus
-quis varius quam quisque. Pulvinar pellentesque habitant morbi tristique
-senectus et. Habitant morbi tristique senectus et netus et malesuada fames ac.
-Ac tortor vitae purus faucibus. Metus vulputate eu scelerisque felis imperdiet.
-Nulla pharetra diam sit amet nisl. Tincidunt vitae semper quis lectus nulla at
-volutpat diam. Euismod in pellentesque massa placerat duis ultricies lacus sed
-turpis. Ultricies mi eget mauris pharetra et ultrices. Ac tincidunt vitae
-semper quis lectus nulla at volutpat. Molestie a iaculis at erat pellentesque.
+From here, the user can quickly input some feedback on any of the tracked data categories on the home screen:
 
+<ProjectImagesBlock
+    images={[
+        {
+            src: inputData,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+
+Or, the participant can select the “Input” tab (the pencil icon) on the bottom navigation bar:
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: inputDataHome,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+
+After selecting a category to input data for, the participant is prompted to input both text based data and a relative numerical score:
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: productivityInput,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+
+### Task 2: View Data and Receive Advice/Analytics
+
+To view personal data, receive analytics, and interface with the OptimizeMe AI, the participant can navigate to the Analytics tab by clicking the magnifying glass icon on the navigation bar. This brings them to the Analytics page:
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: analyticsHome,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+
+From the Analytics tab, participants can also view their data history, partitioned by time period. By selecting a specific week of data, users can view their data, visualized, with more granularity:
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: dataView,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
+
+From here, participants can select “Your Chat” in order to converse with the OptimizeMe AI. You can see an example conversation which demonstrates some of the abilities of the AI in giving advice, asking questions, and displaying data:  
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: yourChat2,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
+    maxHeight={"400px"}
+>
 </ProjectImagesBlock>

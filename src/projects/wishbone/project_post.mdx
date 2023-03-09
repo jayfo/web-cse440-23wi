@@ -71,7 +71,7 @@ import beforeFunctionality from "./assets/post/before_functionality.png";
 import homeScreen from "./assets/post/home_screen.png";
 import inviteScreen from "./assets/post/invite.png";
 import prHeaderScreen from "./assets/post/personal_reflection_header.png";
-import prScreen from "./assets/post/personal_reflection_header.png";
+import prScreen from "./assets/post/personal_reflection.png";
 import otherPrScreen from "./assets/post/other_person's_reflection.png";
 import callingScreen from "./assets/post/suggestion.png";
 import coeditScreen from "./assets/post/coediting.png";
@@ -79,6 +79,9 @@ import writeActionPointScreen from "./assets/post/action_points_done.png";
 import boneLogScreen from "./assets/post/history_log.png";
 import prevActionPointScreen from "./assets/post/prev_action_points.png";
 import prevWishbone from "./assets/post/prev_wishbone.png";
+import otherActionPointScreen from "./assets/post/other_action_point.png";
+import prevSitautionScreen from "./assets/post/past_situation.png";
+import designTwo from "./assets/post/design_2.png"
 
 # Wishbone
 
@@ -125,7 +128,7 @@ import prevWishbone from "./assets/post/prev_wishbone.png";
         src: overviewImage,
     }}
     caption={
-        "Logo (left) and Wishbone's guided personal reflection feature (right)."
+        "Logo (left) and Wishbone's home page (right)"
     }
     width={6}
     maxHeight={"400px"}
@@ -163,7 +166,7 @@ interviews in order to collect qualitative data in a space where the interviewee
 share as much or as little as they like and can talk about their conflict experiences in a setting temporally 
 and spatially removed.
 
-### 1. Communication and Acknowledgement of Feelings is Vital
+### Communication and Acknowledgement of Feelings is Vital
 
 Communication surfaced as a common theme among our three non-professional participants; 
 they all discussed that some form of communication is vital to how they approach and deal with 
@@ -175,7 +178,7 @@ non-professional participant talked about how any communication is better than n
 communication. Following from this, communication became a key aspect of our solution, which 
 our initial storyboard demonstrates.
 
-### 2. Self Awareness is the First Step to Healthy Conflict Management
+### Self Awareness is the First Step to Healthy Conflict Management
 
 Our professional interviewee, Mark (a pseudonym), remarked how root emotions that are the source of 
 the conflict  are often not shared, understood, or acknowledged by either party; we could clearly see 
@@ -190,20 +193,20 @@ exploring why one felt that way. Here is one of our first designs that focused h
     images={[
         {
             src: commAwareness,
-            caption: "Communication and self awareness in our chosen design's storyboard.",
+            caption: "Communication and self awareness in our chosen design's storyboard",
         },
         {
-            src: processing,
-            caption: "Reflection task flow in Wishbone.",
+            src: designTwo,
+            caption: "Written reflection in sketch for one of our initial design ideas",
         },
     ]}
     direction={"row"}
     width={12}
-    maxHeight={"400px"}
+    maxHeight={"500px"}
 >
 </ProjectImagesBlock>
 
-### 3. Time for Processing is Needed
+### Time for Processing is Needed
 
 Our third key insight to managing conflict healthily was that time helps…a lot. Again, this was a 
 sentiment shared by all our participants in which taking time away from the other party and 
@@ -225,7 +228,7 @@ version that we were confident meaningfully and functionally supported our tasks
 transitioned the framework of our final paper prototype into a digital mockup where we 
 incorporated design elements to complement the prototype’s functionality.
 
-### 1. Incorporating Consistency Between Interactive Components
+### Incorporating Consistency Between Interactive Components
 
 <ProjectImagesBlock
     images={[
@@ -253,7 +256,7 @@ example of this change is documented below with the simplification and standardi
 button that takes the individual to the next screen in the task. 
 </ProjectImagesBlock>
 
-### 2. Ensuring Intuitive Core Functionality
+### Ensuring Intuitive Core Functionality
 
 <ProjectImagesBlock
     images={[
@@ -282,7 +285,7 @@ with a key example of this revision shown to the right.
 
 </ProjectImagesBlock>
 
-### 3. Removing Assumptions
+### Removing Assumptions
 
 <ProjectImagesBlock
     images={[
@@ -316,6 +319,15 @@ design, and we also made revisions to have more inclusive wording and options.
 
 ## Resulting Design
 
+Our resulting design from a quarter of iterating revolves around key features including individual 
+processing of thoughts and emotions through personal reflection, acknowledgement of both party’s 
+feelings through shared responses and co-edited situation writing, and intentional retention and 
+execution of resolution through saved action points.  These elements are encompassed within the 
+completion of two tasks: (1) articulating feelings and receiving validation (2) remembering action points 
+and takeaways.
+
+### Articulating Feelings and Receiving Validation
+
 <ProjectImagesBlock
     images={[
         {
@@ -333,16 +345,11 @@ design, and we also made revisions to have more inclusive wording and options.
     ]}
     direction={"row"}
     caption={
-        ""
+        "Creating wishbone, inviting, and inputting personal components"
     }
     width={8}
     maxHeight={"400px"}
 >
-
-Our resulting design from a quarter of iterating tackles these two tasks: 
-(1) articulating feelings and receiving validation (2) remembering action points 
-and takeaways.
-
 To articulate one’s feelings, an individual can create a new wishbone from the homescreen, choose their 
 contact of interest, and begin recording their emotions then their thoughts and feelings.
 
@@ -365,7 +372,7 @@ contact of interest, and begin recording their emotions then their thoughts and 
     ]}
     direction={"row"}
     caption={
-        ""
+        "Collaborative process of receiving other’s reflection and writing together"
     }
     width={8}
     maxHeight={"400px"}
@@ -378,10 +385,8 @@ write their own action points on what they can do to help resolve the conflict.
 
 </ProjectImagesBlock>
 
-To go back and remember one’s action points or revisit the previous situations and reflections, an 
-individual can view “past” from the homepage and view a log of their previously created wishbones.
+### Remembering Action Points & Takeaways
 
-Once selected, the individual can view the situation and both people’s reflections and action points. 
 <ProjectImagesBlock
     images={[
         {
@@ -390,18 +395,41 @@ Once selected, the individual can view the situation and both people’s reflect
         {
             src: boneLogScreen,
         },
+    ]}
+    direction={"row"}
+    caption={
+        "Navigating to history log"
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+To go back and remember one’s action points or revisit the previous situations
+and reflections, an individual can view “past” from the homepage and view a log 
+of their previously created wishbones.
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
         {
             src: prevWishbone,
         },
         {
             src: prevActionPointScreen,
         },
+        {
+            src: prevSitautionScreen,
+        },
+        {
+            src: otherActionPointScreen,
+        },
     ]}
     direction={"row"}
     caption={
-        ""
+        "Navigating a previous Wishbone's situation & action points"
     }
-    width={12}
+    width={8}
     maxHeight={"400px"}
 >
+Once selected, the individual can view the situation and both people’s reflections
+and action points. 
 </ProjectImagesBlock>
