@@ -117,6 +117,7 @@ import ima from "./assets/post/ima.jpg";
 <ProjectImageBlock
     image={{
         src: gym,
+        alt: "A picture of several pieces of equipment in a typical gym."
     }}
     caption={
         "Going to the gym and can be a stressful and time-consuming process."
@@ -141,11 +142,13 @@ We designed an application to combat the issues of hostile gym environments, poo
     images={[
         {
             src: csePowerlifters,
-            caption: "The UW CSE Powerlifters RSO Logo"
+            caption: "The UW CSE Powerlifters RSO Logo",
+            alt: "The UW CSE Powerlifters RSO Logo"
         },
         {
             src: ima,
-            caption: "The UW Intramural Activities (IMA) Center"
+            caption: "The UW Intramural Activities (IMA) Center",
+            alt: "The UW Intramural Activities Center"
         },
     ]}
     direction={"row"}
@@ -168,10 +171,12 @@ We found that more experienced gym members largely had the most difficulty deali
         {
             src: sketch1,
             caption: "Our first sketch involving video tutorials and a messaging platform",
+            alt: "Our first sketch including video tutorials and a messaging platform"
         },
         {
             src: sketch2,
             caption: "Our second sketch detailing workout plans and wait times.",
+            alt: "Our second sketch detailing workout plans and wait times"
         },
     ]}
     direction={"row"}
@@ -202,7 +207,7 @@ After making the necessary design modifications, we did usability tests with thr
 
 ### Color Coding for Easy Interpretation
 
-<ProjectImageBlock image={{ src: colorCodedMap, }} caption={ "Our updated color-coded map." } width={6} maxHeight={"400px"}>
+<ProjectImageBlock image={{ src: colorCodedMap, alt: "The color coded map of the gym"}} caption={ "Our updated color-coded map." } width={6} maxHeight={"400px"}>
 
 The first important revision was to color code the map of the floors of the gym. When looking at the map of the gym, it used to have no way to indicate the busyness of a room in the gym. By color-coding the gym map, the participant can see how busy the space is before they enter. We learned this was an important feature during usability testing because one of our participants said they would not enter a room in the gym if it were too busy. In our previous design, the participant would have to walk into a room to see how busy it was. We wanted to alleviate this step of having to walk into the room by color-coding the rooms in the gym by busyness. This is important because it saves the participant time and makes going to the gym a smoother experience, which is one of the main goals of our application.
 
@@ -214,11 +219,13 @@ The first important revision was to color code the map of the floors of the gym.
     images={[
         {
             src: oldNavBar,
-            caption: "Before"
+            caption: "Before",
+            alt: "Our old navigation bar that has gym status, map, messaging and profile"
         },
         {
             src: newNavBar,
-            caption: "After"
+            caption: "After",
+            alt: "Our old navigation bar that has home, map, messaging and profile"
         },
     ]}
     direction={"row"}
@@ -236,11 +243,13 @@ The second important revision we made was changing the language in the navigatio
     images={[
         {
             src: inclusivityBefore,
-            caption: "Before"
+            caption: "Before",
+            alt: "Our old machine information page with just muscle group names"
         },
         {
             src: inclusivityAfter,
-            caption: "After"
+            caption: "After",
+            alt: "Our new machine information page including muscle group names and diagrams"
         },
     ]}
     direction={"row"}
@@ -257,6 +266,7 @@ Another revision we made related to meeting the Web Content Accessibility Guidel
 <ProjectImageBlock
     image={{
         src: mockupOverview,
+        alt: "A mockup of our entire digital prototype including pages such as login screens, floor maps, machine information pages, and legends for color-coding"
     }}
     caption={
         "Digital Mockup Overview"
@@ -272,9 +282,10 @@ In implementing the digital mockup, we made a few different design decisions dep
 <ProjectImageBlock
     image={{
         src: task1,
+        alt: A walkthrough detailing how participants can accomplish task 1: Participants are able to infer the status of various machines from the gym map (i.e. how busy they are and what similar machines are open that they might be able to use as an alternative)."
     }}
     caption={
-        "Task 1: Participants are able to infer the status of various machines from the gym map (i.e. how busy they are and what similar machines are open that they might be able to use as an alternative).
+        "Task 1: Participants are able to infer the status of various machines from the gym map (i.e. how busy they are and what similar machines are open that they might be able to use as an alternative)."
     }
     width={6}
     maxHeight={"400px"}
@@ -287,9 +298,10 @@ Walkthrough: Participants can click on a section of the map that represents a sp
 <ProjectImageBlock
     image={{
         src: task2,
+        alt: "A walkthrough detailing how participants can accomplish task 2: Participant learns information about the machine (i.e. muscle groups and how to use the machine)."
     }}
     caption={
-        "Task 2: Participant learns information about the machine (i.e. muscle groups and how to use the machine).."
+        "Task 2: Participant learns information about the machine (i.e. muscle groups and how to use the machine)."
     }
     width={6}
     maxHeight={"400px"}
