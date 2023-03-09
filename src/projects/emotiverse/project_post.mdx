@@ -75,6 +75,11 @@ import digital3 from "./assets/post/digital3.png";
 import digital4 from "./assets/post/digital4.png";
 import task1 from "./assets/post/task1.png";
 import task2 from "./assets/post/task2.png";
+import initialDesign from "./assets/post/initialDesign.png";
+import storyboard from "./assets/post/storyboard.png";
+import storyboard2 from "./assets/post/storyboard2.png";
+import cover from "./assets/post/cover.png";
+import keyFeatures from "./assets/post/keyFeatures.png";
 
 
 # Emotiverse
@@ -117,10 +122,10 @@ import task2 from "./assets/post/task2.png";
 
 <ProjectImageBlock
     image={{
-        src: DigitalDesign,
+        src: cover,
     }}
     caption={
-        "This is our final digitalized design."
+        "Emotiverse uses music to create a social and productive environment."
     }
     width={6}
     maxHeight={"400px"}
@@ -133,7 +138,9 @@ such as depression. University students often confront high levels of stress and
 anxiety from academic pressures and personal experiences, which adversely affect
 their mental and physical health. Despite the awareness of these negative emotions,
 they often struggle to find healthy coping mechanisms to manage and alleviate these
-unwanted feelings. To address this issue, we offer a unique approach that includes
+unwanted feelings.
+
+To address this issue, we offer a unique approach that includes
 music, social interaction, and mood tracking within a metaverse. Our mood tracking
 system helps users identify and reflect on their emotions, while simultaneously
 use to generate personalized playlists to improve or maintain their emotions.
@@ -145,6 +152,17 @@ increase productivity among college students.
 
 ## Design Research Process and Key Insights
 
+<ProjectImageBlock
+    image={{
+        src: initialDesign,
+    }}
+    caption={
+        "Our initial designs for metaverse-like mobile application and a Bluetooth display speaker with a remote."
+    }
+    width={6}
+    maxHeight={"400px"}
+>
+
 The goal of our design research aimed to understand how people engage with music
 and their experience with existing music applications. We conducted semi-structured
 interviews with four college students who interact with existing music applications
@@ -155,6 +173,8 @@ to gather insights and find commonalities among functions the participants find
 useful or need improvements. Then, use these commonalities to help us design a
 new application that combines music and mood that better meets our audiences needs
 and desires.
+
+</ProjectImageBlock>
 
 ### Immersive Design to Improve Concentration
 
@@ -175,22 +195,6 @@ that will display various types of animations to help reduce possible distractio
 
 ### Simplifying Music Sharing
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: music1,
-            caption: "Share music through chat.",
-        },
-        {
-            src: music2,
-            caption: "View and blend playlist with friends.",
-        },
-    ]}
-    direction={"row"}
-    width={8}
-    maxHeight={"400px"}
->
-
 This insight emerged from user feedback and secondary research on social interaction
 and music discovery. We found that our participants like to share music but existing
 app features for sharing are cumbersome. For example, the sync share feature, which
@@ -198,9 +202,8 @@ allows users to listen to music together, is not widely used due to the complexi
 of setting it up and learning how to use it. We aim to simplify sharing with an
 intuitive, user-friendly feature that encourages social interaction and music discovery.
 
-</ProjectImagesBlock>
-
 ### Personalization and Recommendation
+
 
 The insight came from user feedback and secondary research on the importance of
 personalization and recommendation in music applications. Our interviews revealed
@@ -210,6 +213,24 @@ shows the importance of well designed personalization and recommendation feature
 of a music app. Our music app prioritizes these features, allowing users to create
 personalized playlists, and receive recommendations based on their mood, music
 history, and preferences.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: storyboard2,
+        },
+        {
+            src: storyboard,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        "Storyboards of Lily and Sandy using Emotiverse in various ways."
+    }
+    maxHeight={"400px"}
+>
+
+</ProjectImagesBlock>
 
 ## Iterative Design Process and Key Insights
 
@@ -307,68 +328,66 @@ made the application more enjoyable to use.
 
 ## Resulting Design
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: digital1,
-        },
-        {
-            src: digital2,
-        },
-        {
-            src: digital3,
-        },
-        {
-            src: digital3,
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: keyFeatures,
+    }}
     caption={
-        "Primary features digitalized."
+        "The key features of Emotiverse."
     }
     width={8}
     maxHeight={"400px"}
 >
 
 ### Overall design
-- A music and social network app with inspirations from the Metaverse
-- The goal is to help university students improve mood and manage stress through
-personalized music, mood tracking, social interaction, and productive studying
+Emotiverse is a music and social network app with inspirations from the Metaverse.
+The goal is to help university students improve mood and manage stress through
+personalized music, mood tracking, social interaction, and productive studying.
 
+</ProjectImageBlock>
 
-</ProjectImagesBlock>
+### Improve productivity through music and studying with friends
 
-<ProjectImagesBlock
-    images={[
-        {
-            src: task1,
-        },
-        {
-            src: task2,
-        },
-    ]}
-    direction={"row"}
+<ProjectImageBlock
+    image={{
+        src: task1,
+    }}
     caption={
-        "The two main tasks of our application."
+        "Steps to enter listen/study mode."
     }
     width={8}
     maxHeight={"400px"}
 >
 
-### Improve productivity through music and studying with friends.
-- Select the music screen
-- Connect to the speaker
-- Select a playlist to listen to
-- Choose custom display/Study mode
-- If study mode is chosen, set a study timer
-- Start session - speaker displays animation and plays music.
-The phone will be locked if study mode is chosen
+1. Turn on speaker and make sure Bluetooth is on too.
+2. On the top left corner of the homepage of the app:
+    1. Click on the speaker button.
+        1. Toggle "show animation" based on preference, then click on "Connect" to confirm.
+        2. Select a playlist and song to start listening!
+    2. Click on the book button.
+        1. Input preference and click on "Start Study" to enter study mode.
+        (once in study mode, all notifications will be blocked)
 
-### Manage stress and reduce negative emotions through daily mood tracking.
-- Select mood tracking screen
-- Select a characters face that best represents their mood for that day
-- Receive a “gift” (a personalized playlist based on the inputted mood for that day)
-- Look back in the calendar to find moods and music listened for the previous days
+</ProjectImageBlock>
 
+### Manage stress and reduce negative emotions through daily mood tracking
 
-</ProjectImagesBlock>
+<ProjectImageBlock
+    image={{
+        src: task2,
+    }}
+    caption={
+        "Steps to track mood and access personalized playlist."
+    }
+    width={8}
+    maxHeight={"400px"}
+>
+
+1. On the homepage of the app, click on the mood button at the bottom of the screen.
+2. Select a facial expression that best represents the mood for the day.
+    1. To make customization expression click on the blue plus button.
+3. Once a mood has been recordered for the day, a “gift” (personalized playlist
+based on that mood) will apear on the homepage
+4. To look back on previous moods and playlist, click on the same mood button from step 1.
+
+</ProjectImageBlock>
