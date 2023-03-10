@@ -53,9 +53,9 @@ import TeamMemberGallery from "src/components/project/TeamMemberGallery";
 */}
 
 import imageTeamPerson1 from "./assets/team/Vidhi.png";
-import imageTeamPerson2 from "./assets/team/Hkphoto.jpg";
+import imageTeamPerson2 from "./assets/team/Hamreet.jpg";
 import imageTeamPerson3 from "./assets/team/Sam.JPG";
-import imageTeamPerson4 from "./assets/team/jack.jpg";
+import imageTeamPerson4 from "./assets/team/JackHeadShot.jpg";
 
 import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
@@ -74,10 +74,11 @@ import productivityInput from "./assets/post/productivityInput.png";
 import analyticsHome from "./assets/post/analyticsHome.png";
 import dataView from "./assets/post/dataView.png";
 import logo from "./assets/post/logo.png";
+import analyticsHomeIphone from "./assets/post/analyticsHomeIphone.png";
 
 # OptimizeMe
 
-<ProjectSubtitle>Get more out of your data.</ProjectSubtitle>
+<ProjectSubtitle>Get more out of your data to boost your productivity</ProjectSubtitle>
 
 ## Team
 
@@ -115,17 +116,18 @@ import logo from "./assets/post/logo.png";
 
 <ProjectImageBlock
     image={{
-        src: logo,
+        src: analyticsHomeIphone,
     }}
-    
+    caption={
+        "The Analytics tab  showcases the AI chat feature and data history along with quick facts based on the noticed trends"
+    }
     width={6}
     maxHeight={"400px"}
 >
 
 Many would agree that feeling unproductive, slow, and inefficient leaves people regretful of their day or even a week. Hoping to improve this in a sustainable manner while balancing work, physical and mental health is difficult. There is a huge availability of tracked health data. According to a survey by Gallup, roughly half of American adults have tracked at least one health related metric using an application or smartwatch. However, it is challenging to exactly identify the categories of wellness contributing to or detracting from productivity levels. What are ways to make health data more actionable and meaningful to users? 
 
-To address this issue, OptimizeMe is a mobile application focused on using the intersection of a range of tracked metrics, such as sleep, exercise, diet, and stress levels to optimize an individual's productivity. OptimizeMe aims to surface correlations/trends between empirical data and subjective participant feedback, based on a personalized definition of productivity. The focus of our design is to provide a way in which participants can track and monitor their health-related metrics easily, realizing trends that suggest participants about their productivity for each week. Our design focuses on simplicity, making it intuitive for participants to learn and  navigate the mobile application in their daily lifestyle. OptimizeMe is looking to do more with commonly collected data, making it more actionable and meaningful to participants.
-
+To address this issue, OptimizeMe is a mobile application focused on using the intersection of a range of tracked metrics, such as sleep, exercise, diet, and stress levels to optimize an individual's productivity. OptimizeMe aims to surface correlations/trends between empirical data and subjective participant feedback, based on a personalized definition of productivity. Our design focuses on making data more actionable through the chat feature which provides personalized advice on how to improve individual metrics based on the participant’s goals and trends. OptimizeMe is looking to do more with commonly collected data, making it more actionable and meaningful to participants.
 
 </ProjectImageBlock>
 
@@ -163,11 +165,10 @@ Displaying data alone does not increase productivity. Initially we had a simple 
     maxHeight={"400px"}
 >
 
-Our main focus during the iterative design process was on conducting usability testing and heuristic evaluations, which allowed us to detect any usability issues that participants encountered while interacting with our paper prototypes. By obtaining valuable insights into their preferences and requirements, and collecting feedback on the overall participant experience, we proposed improvements that aimed to enhance their experience with OptimizeMe. Our primary goal was to improve the design by capitalizing on its strengths and addressing its weaknesses, with the ultimate objective of creating a design that maximized the benefits that participants could derive from the application and their inputted data. We conducted usability testing with three participants, with particular emphasis on observing how they inputted their goals for metrics, qualitative and subjective data, and how they received analytics for each metric. We continued to iterate on the paper prototypes, incorporating adjustments, until we had developed a solid prototype that we transformed into our digital mockup. With this foundation, we were able to expand on certain features in the digital mockup to better understand the overall functionality of OptimizeMe.
-
+Our main focus during the iterative design process was on conducting usability testing and heuristic evaluations, which allowed us to detect any usability issues that participants encountered while interacting with our paper prototypes. By obtaining valuable insights into their preferences and requirements, and collecting feedback on the overall participant experience, we proposed improvements that aimed to enhance their experience with OptimizeMe. We conducted usability testing with three participants, with particular emphasis on observing how they inputted their goals for metrics, qualitative and subjective data, and how they received analytics for each metric. We continued to iterate on the paper prototypes, incorporating adjustments, until we had developed a solid prototype that we transformed into our digital mockup. With this foundation, we were able to expand on certain features in the digital mockup to better understand the overall functionality of OptimizeMe.
 </ProjectImageBlock>
 
-### Improving the analytics: 
+### Improving the Analytics
 
 <ProjectImageBlock
     image={{
@@ -184,7 +185,7 @@ During our usability testing, we identified an area that required improvement, s
 
 </ProjectImageBlock>
 
-### Guiding participant through the application:
+### Guiding Participant Through the Application
 
 <ProjectImageBlock
     image={{
@@ -201,7 +202,7 @@ During our third usability test, we observed that participants were still gettin
 
 </ProjectImageBlock>
 
-### Implementing guided prompts: 
+### Implementing Guided Prompts
 
 <ProjectImageBlock
     image={{
@@ -220,101 +221,151 @@ During our heuristic evaluations, we identified an issue with the absence of gui
 
 ## Resulting Design
 
+The application’s final design included the following key features: 
+- Participants’ can input individual subjective and quantitative data
+- Participants' can set personally defined goals through the chat feature
+- Participants’ can view data and receive personalized advice and analytics
+- Participants’ can interact with a AI chat that is in tune with their personalized data and goals
+
+Our two primary tasks are as follows:
+
 ### Task 1: Inputting Data And Goals
 
-<ProjectImageBlock
-    image={{
-        src: yourChat,
-    }}
-    width={6}
-    maxHeight={"400px"}
->
 
 After completing the initial tutorial, the user will be introduced to the OptimizeMe proprietary AI. This is where the app begins to understand the personal goals and intentions of individual participants. These screens (right) show how an introductory interaction with the AI would look:
 
-</ProjectImageBlock>
-
-<ProjectImageBlock
-    image={{
-        src: homePage,
-    }}
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: yourChat,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
     maxHeight={"400px"}
 >
+</ProjectImagesBlock>
 
 After interacting with the AI to establish some goals for the participant, they will be redirected to the home page of the app:
 
-</ProjectImageBlock>
-
-<ProjectImageBlock
-    image={{
-        src: inputData,
-    }}
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: homePage,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
     maxHeight={"400px"}
 >
+</ProjectImagesBlock>
 
 From here, the user can quickly input some feedback on any of the tracked data categories on the home screen:
 
-</ProjectImageBlock>
-
-<ProjectImageBlock
-    image={{
-        src: inputDataHome,
-    }}
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: inputData,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
     maxHeight={"400px"}
 >
+</ProjectImagesBlock>
 
 Or, the participant can select the “Input” tab (the pencil icon) on the bottom navigation bar:
 
-</ProjectImageBlock>
-
-<ProjectImageBlock
-    image={{
-        src: productivityInput,
-    }}
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: inputDataHome,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
     maxHeight={"400px"}
 >
+</ProjectImagesBlock>
 
 After selecting a category to input data for, the participant is prompted to input both text based data and a relative numerical score:
 
-</ProjectImageBlock>
+<ProjectImagesBlock
+    images={[
+        {
+            src: productivityInput,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
 
 ### Task 2: View Data and Receive Advice/Analytics
 
-<ProjectImageBlock
-    image={{
-        src: analyticsHome,
-    }}
-    width={6}
-    maxHeight={"400px"}
->
-
 To view personal data, receive analytics, and interface with the OptimizeMe AI, the participant can navigate to the Analytics tab by clicking the magnifying glass icon on the navigation bar. This brings them to the Analytics page:
-</ProjectImageBlock>
 
-<ProjectImageBlock
-    image={{
-        src: dataView,
-    }}
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: analyticsHome,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
     maxHeight={"400px"}
 >
+</ProjectImagesBlock>
 
 From the Analytics tab, participants can also view their data history, partitioned by time period. By selecting a specific week of data, users can view their data, visualized, with more granularity:
 
-</ProjectImageBlock>
-
-<ProjectImageBlock
-    image={{
-        src: yourChat2,
-    }}
-    width={6}
+<ProjectImagesBlock
+    images={[
+        {
+            src: dataView,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
     maxHeight={"400px"}
 >
+</ProjectImagesBlock>
 
 From here, participants can select “Your Chat” in order to converse with the OptimizeMe AI. You can see an example conversation which demonstrates some of the abilities of the AI in giving advice, asking questions, and displaying data:  
 
-</ProjectImageBlock>
+<ProjectImagesBlock
+    images={[
+        {
+            src: yourChat2,
+        }
+    ]}
+    direction={"row"}
+    caption={
+        ""
+    }
+    width={12}
+    maxHeight={"400px"}
+>
+</ProjectImagesBlock>
