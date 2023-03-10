@@ -62,10 +62,10 @@ import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 import imageLogo from "./assets/post/skia.png";
 import imageIcon from "./assets/post/icon.png";
 import imageFunctionality from "./assets/post/functionality.png";
-import imageConsist1a from "./assets/post/consist1a.jpg";
-import imageConsist1b from "./assets/post/consist1b.jpg";
-import imageConsist2a from "./assets/post/consist2a.jpg";
-import imageConsist2b from "./assets/post/consist2b.jpg";
+import imageConsist1a from "./assets/post/consist1a.png";
+import imageConsist1b from "./assets/post/consist1b.png";
+import imageConsist2a from "./assets/post/consist2a.png";
+import imageConsist2b from "./assets/post/consist2b.png";
 import imageDigitalMock from "./assets/post/digitalMockup.png";
 import imageTask1Pt1 from "./assets/post/task1pt1.png";
 import imageTask1Pt2 from "./assets/post/task1pt2.png";
@@ -77,6 +77,10 @@ import imagePrivacy2a from "./assets/post/privacy2a.png";
 import imagePrivacy2b from "./assets/post/privacy2b.png";
 import imageLocating1a from "./assets/post/locating1a.png";
 import imageLocating1b from "./assets/post/locating1b.png";
+import imageDemo1 from "./assets/post/demo1.png";
+import imageDemo2 from "./assets/post/demo2.png";
+import imageDemo3 from "./assets/post/demo3.png";
+import imageDemo4 from "./assets/post/demo4.png";
 
 <img src={imageLogo}></img>
 
@@ -390,6 +394,9 @@ to that recording.
 
 ## Resulting Design
 
+You can explore the prototype on Figma following this link:
+[Skiá Digital Prototype](https://www.figma.com/proto/CavHYuQJnPL2aEJQ00AA3j/Phone-Application-Prototype?node-id=424%3A516&scaling=scale-down&page-id=0%3A1&starting-point-node-id=424%3A516)
+
 <ProjectImageBlock
     image={{
         src: imageDigitalMock,
@@ -432,6 +439,46 @@ to that recording.
     caption={
         "Task 2: Reviewing a friend’s session and posting your own"
     }
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+></ProjectImagesBlock>
+
+## Live Feedback Proof of Concept
+
+While we spent the majority of our time this quarter on designing
+the mobile application, we have also explored developing the
+algorithm for detecting a boxer's form in real time and sharing
+audible instructions and encouragement for the benefit of the
+participant.
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageDemo1,
+            caption: "Screenshot of hands down",
+        },
+        {
+            src: imageDemo2,
+            caption: "Screenshot of corrected form",
+        },
+    ]}
+    direction={"row"}
+    width={12}
+    maxHeight={"400px"}
+></ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: imageDemo3,
+            caption: "Screenshot of elbow floating out",
+        },
+        {
+            src: imageDemo4,
+            caption: "Screenshot of corrected form",
+        },
+    ]}
     direction={"row"}
     width={12}
     maxHeight={"400px"}
