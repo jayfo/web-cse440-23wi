@@ -61,26 +61,22 @@ import imagePlaceholder300x600 from "./assets/post/300x600.png";
 import imagePlaceholder400x400 from "./assets/post/400x400.png";
 import imagePlaceholder1200x800 from "./assets/post/1200x800.png";
 
-import logo from "./assets/post/logo.png";
-import DigitalDesign from "./assets/post/DigitalDesign.png";
 import AddressUserConfusion from "./assets/post/AddressUserConfusion.png";
 import UserContFlex from "./assets/post/UserContFlex.png";
-import PaperPrototype from "./assets/post/PaperPrototype.png";
 import RewardsSystem from "./assets/post/RewardsSystem.png";
-import music1 from "./assets/post/music1.png";
-import music2 from "./assets/post/music2.png";
-import digital1 from "./assets/post/digital1.png";
-import digital2 from "./assets/post/digital2.png";
-import digital3 from "./assets/post/digital3.png";
-import digital4 from "./assets/post/digital4.png";
-import task1 from "./assets/post/task1.png";
-import task2 from "./assets/post/task2.png";
+import task1_1 from "./assets/post/task1_1.png";
+import task1_2 from "./assets/post/task1_2.png";
+import task1_3 from "./assets/post/task1_3.png";
+import task1_4 from "./assets/post/task1_4.png";
+import task1_5 from "./assets/post/task1_5.png";
+import task2_1 from "./assets/post/task2_1.png";
+import task2_2 from "./assets/post/task2_2.png";
+import task2_3 from "./assets/post/task2_3.png";
 import initialDesign from "./assets/post/initialDesign.png";
 import storyboard from "./assets/post/storyboard.png";
 import storyboard2 from "./assets/post/storyboard2.png";
 import cover from "./assets/post/cover.png";
 import keyFeatures from "./assets/post/keyFeatures.png";
-
 
 # Emotiverse
 
@@ -157,7 +153,9 @@ increase productivity among college students.
         src: initialDesign,
     }}
     caption={
-        "Our initial designs for metaverse-like mobile application and a Bluetooth display speaker with a remote."
+        "Our initial sketches of " +
+        "a metaverse-like mobile application and " +
+        "a remote controlled Bluetooth display speaker."
     }
     width={6}
     maxHeight={"400px"}
@@ -340,54 +338,92 @@ made the application more enjoyable to use.
 >
 
 ### Overall design
-Emotiverse is a music and social network app with inspirations from the Metaverse.
-The goal is to help university students improve mood and manage stress through
-personalized music, mood tracking, social interaction, and productive studying.
+Emotiverse is primarily a music and social network mobile application with
+inspirations from the Metaverse. The incorporation of a Bluetooth speaker
+provides a way for our users to relax and enjoy music or focus on important tasks,
+distraction-free. The display of the speaker is designed to help create a more
+immersive environment when using our mobile applications. Our goal for Emotiverse
+is to provide a solution for university students to become more conscious of
+their emotions and help manage them through features such as personalized music,
+mood tracker, and various ways of interacting with other users.
 
 </ProjectImageBlock>
 
 ### Improve productivity through music and studying with friends
 
-<ProjectImageBlock
-    image={{
-        src: task1,
-    }}
-    caption={
-        "Steps to enter listen/study mode."
-    }
-    width={8}
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1_1,
+        },
+        {
+            src: task1_2,
+        },
+        {
+            src: task1_3,
+        },
+    ]}
+    direction={"row"}
     maxHeight={"400px"}
 >
 
-1. Turn on speaker and make sure Bluetooth is on too.
-2. On the top left corner of the homepage of the app:
-    1. Click on the speaker button.
-        1. Toggle "show animation" based on preference, then click on "Connect" to confirm.
-        2. Select a playlist and song to start listening!
-    2. Click on the book button.
-        1. Input preference and click on "Start Study" to enter study mode.
-        (once in study mode, all notifications will be blocked)
+To enter listening mode:
 
-</ProjectImageBlock>
+1. Turn on speaker and make sure Bluetooth is on too.
+2. On the top left corner of the homepage of the app, Click on the speaker button.
+3. Toggle "show animation" based on preference, then click on "Connect" to confirm.
+4. Select a playlist and song to start listening!
+
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1_1,
+        },
+        {
+            src: task1_4,
+        },
+        {
+            src: task1_5,
+        },
+    ]}
+    direction={"row"}
+    maxHeight={"400px"}
+>
+
+To enter study mode:
+
+1. Turn on speaker and make sure Bluetooth is on too.
+2. On the top left corner of the homepage of the app, Click on the book button.
+3. Input preference and click on "Start Study" to enter study mode.
+(once in study mode, all notifications will be blocked)
+
+</ProjectImagesBlock>
 
 ### Manage stress and reduce negative emotions through daily mood tracking
 
-<ProjectImageBlock
-    image={{
-        src: task2,
-    }}
-    caption={
-        "Steps to track mood and access personalized playlist."
-    }
-    width={8}
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2_1,
+        },
+        {
+            src: task2_2,
+        },
+        {
+            src: task2_3,
+        },
+    ]}
+    direction={"row"}
     maxHeight={"400px"}
 >
 
 1. On the homepage of the app, click on the mood button at the bottom of the screen.
 2. Select a facial expression that best represents the mood for the day.
-    1. To make customization expression click on the blue plus button.
+    (To make customization expression click on the blue plus button.)
 3. Once a mood has been recordered for the day, a “gift” (personalized playlist
 based on that mood) will apear on the homepage
 4. To look back on previous moods and playlist, click on the same mood button from step 1.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
