@@ -131,11 +131,11 @@ import revisedWireframes from "./assets/post/revisedWireframes.PNG";
 
 The overall problem space we explored was that the gym is can be a stressful environment for beginners who don't know how to use equipment, and people often find it difficult to manage their time when they're at the gym because of the busyness in different sections. Within the gym, there is internal pressure, particularly against women and people who don't stereotypically fall into the "gym bro" stereotype. This pressure makes it difficult to work out, and oftentimes, this pressure also leads to a hesitance to ask for help when one is struggling. People also find that machines can be super busy at different times of the day and find it difficult to stick to a schedule and remain on time. As a result, this leads to people not pushing themselves as hard, not asking for help, and sometimes even skipping their gym workout altogether. This results in people seeing the gym environment as a burden rather than a routine.
 
+</ProjectImageBlock>
+
 ### Design
 
 We designed an application to combat the issues of hostile gym environments, poor time management for the gym, and gym equipment-related knowledge barriers. Our goal is for people to actually find the motivation to go the gym and not see it as a burden in their life routines by having a resource to help manage their time at the gym and provide the information they need to try new exercises and machines. Our app would be specially catered to one gym where all members are required to download the app, and it would include a map of the gym that would help to guide the users and give directions, as well as lead them to specific machines or alternatives available if the machines they want to use are too busy. The app would have two primary functionalities. One of these functionalities is knowing how crowded the gym is before going while measuring the busyness of specific sections and machines. The other functionality is letting the participant understand the various muscle groups and fitness areas that a machine primarily targets and guiding the participant through the process of using the machines effectively to avoid injury. A page dedicated to each type of machine features 3D video tutorials and diagrams of the muscle groups being exercised.
-
-</ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
@@ -152,14 +152,16 @@ We designed an application to combat the issues of hostile gym environments, poo
             alt: "The UW Intramural Activities Center"
         },
     ]}
-    direction={"row"}
-    width={8}
+    direction={"column"}
+    width={4}
     maxHeight={"400px"}
 >
  
 After a discussion period in which our team carefully considered different problem spaces in our lives, we eventually decided to move forth with the idea of a "virtual personal trainer" for the gym after recognizing how much difficulty we, as beginners, faced with sticking to a gym routine and learning the uses of different gym equipment.
 
 As we entered our design research phase, we worked towards identifying primary issues within our problem space. To do this, we determined the audience that we would target and the people who would ideally use our design. We first analyzed the fitness trends and datasets that we found on the Internet to frame our interview questions around. For example, our analysis from Strava helped us determine that gym membership trends peak in January, but gym attendance sharply falls by mid-January and remains steady until gym attendance trends start falling after mid-March. We used context to lead us to the conclusion that people don't stick to their new year's resolutions of going to the gym more often and at least on a weekly basis. We also made sure to target a carefully selected interview sample space to receive the best results to guide our design. The next step was to write down a few starter questions that would guide the research. These questions were separated into two subgroups in order to satisfy our target audiences: beginner and experienced gym members. This would differentiate our two interest groups and help us better understand the issues that the interviewees had based on their experience level. We ended up choosing participants from the CSE Powerlifters group, Elm Gym, the IMA, and other close family and friends. We aimed to get people from a broad range of experience levels. Our primary research method for this project was through interviews, and we aimed to get a diverse range of interviewees depending on their level of gym experience, as well as an even split between male and female-identifying participants to see if there was a divide in perspectives related to what stops people from going to the gym based on the gender they present as. We interviewed male members of CSE Powerlifters, an experienced weightlifting group on campus, as well as female members of the IMA who take beginner workout classes there. Another research method we used was a meta-analysis of data collected through previous research studies that helped us identify key factors that stop people from regularly going to the gym, such as poor time management.
+
+</ProjectImagesBlock>
 
 ### Long Wait Times and Time Management
 
@@ -236,7 +238,7 @@ The first important revision was to color code the map of the floors of the gym.
 
 The second important revision we made was changing the language in the navigation bar. In our previous design, we had the home screen labeled as Gym Status. We learned this language by completing the task of “seeing how busy a machine is,” confusing for participants. Rather than going to the map, one of the participants in our usability test went to the “Gym Status” screen to find the busyness of a machine. We combated this confusion by making the home screen titled, “Home.” This is important because it allows participants to clearly achieve the task of “seeing how busy a machine is” without confusion.
 
-</ProjectImageBlock>
+</ProjectImagesBlock>
 
 ### Promoting Inclusivity
 
@@ -260,7 +262,9 @@ The second important revision we made was changing the language in the navigatio
 
 One revision we made to promote the inclusivity of people at various knowledge levels about the gym and their personal anatomy was the revision related to popping up an image showing muscle groups that are targeted instead of just listing them. Oftentimes, people who are attempting to gain more familiarity with muscle groups targeted by different machines might not be able to identify specific muscle groups by just their name, so having a diagram there to aid them in their learning process is essential. We had made an unintentional assumption that the people using our app would already be familiar with where specific muscle groups are located if they wanted to use a specific machine that they believed might target those muscles.
 Another revision we made related to meeting the Web Content Accessibility Guidelines was increasing the font size of the machine status because it was too small beforehand. WCAG guidelines advise bigger text to ensure that text is not illegible. Conceptually, our design process so far has been targeted toward promoting inclusive environments at the gym, so we didn't have to make many modifications to the overall design process. In future iterations, we created more distinct and contrasting color options and also turned a lot of the more wordy sections into separate sections using buttons, so text-to-speech applications don’t have to read everything aloud all at once.
- 
+
+</ProjectImagesBlock>
+
 <ProjectImageBlock
     image={{
         src: revisedWireframes,
@@ -273,8 +277,9 @@ Another revision we made related to meeting the Web Content Accessibility Guidel
     maxHeight={"400px"}
 >
 
-
 ## Resulting Design
+
+</ProjectImageBlock>
 
 <ProjectImageBlock
     image={{
@@ -295,7 +300,7 @@ In implementing the digital mockup, we made a few different design decisions dep
 <ProjectImageBlock
     image={{
         src: task1,
-        alt: A walkthrough detailing how participants can accomplish task 1: Participants are able to infer the status of various machines from the gym map (i.e. how busy they are and what similar machines are open that they might be able to use as an alternative)."
+        alt: "A walkthrough detailing how participants can accomplish task 1: Participants are able to infer the status of various machines from the gym map (i.e. how busy they are and what similar machines are open that they might be able to use as an alternative)."
     }}
     caption={
         "Task 1: Participants are able to infer the status of various machines from the gym map (i.e. how busy they are and what similar machines are open that they might be able to use as an alternative)."
