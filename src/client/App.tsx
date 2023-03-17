@@ -39,7 +39,7 @@ import ProjectMediSymp from '../projects/medisymp/project_post.mdx';
 import ProjectNomNom from '../projects/nomnom/project_post.mdx';
 import ProjectOptimizeMe from '../projects/optimizeme/project_post.mdx';
 import ProjectPenPal from '../projects/penpal/project_post.mdx';
-import ProjectPinPal from '../projects/pinpal/project_post.mdx';
+import ProjectPinPals from '../projects/pinpals/project_post.mdx';
 import ProjectSkia from '../projects/skia/project_post.mdx';
 import ProjectStrelmo from '../projects/strelmo/project_post.mdx';
 import ProjectTheKiddeTable from '../projects/thekiddietable/project_post.mdx';
@@ -190,7 +190,7 @@ export const App: React.FunctionComponent = () => {
                         <Route path="/projects/nomnom" element={<ProjectNomNom/>} />
                         <Route path="/projects/optimizeme" element={<ProjectOptimizeMe/>} />
                         <Route path="/projects/penpal" element={<ProjectPenPal/>} />
-                        <Route path="/projects/pinpal" element={<ProjectPinPal/>} />
+                        <Route path="/projects/pinpals" element={<ProjectPinPals/>} />
                         <Route path="/projects/skia" element={<ProjectSkia/>} />
                         <Route path="/projects/strelmo" element={<ProjectStrelmo/>} />
                         <Route path="/projects/thekiddietable" element={<ProjectTheKiddeTable/>} />
